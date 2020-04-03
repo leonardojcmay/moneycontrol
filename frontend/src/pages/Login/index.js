@@ -33,7 +33,7 @@ export default function Login() {
             localStorage.setItem('userName', response.data.name);//nome do usuario
 
             //Enviando usuario para rota /profile , que é onde contém os casos
-            //history.push('/profile');
+            history.push('/profile');
 
         } catch (err) {
             alert('Falha no login, tente novamente.');            

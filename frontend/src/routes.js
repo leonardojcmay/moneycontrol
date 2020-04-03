@@ -5,8 +5,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Login from './pages/Login';
 //Importar página Register: cadastro dos usuarios
 import Register from './pages/Register';
-//Importando página Profile: listar os casos da ONG que esta logada no sistema
+//Importando página Profile: listar as vendas do usuario que esta logada no sistema
 import Profile from './pages/Profile';
+//Importando página NewSale: cadastrar nova venda
+import NewSale from './pages/NewSale';
 
 export default function Routes() {
     return(
@@ -15,6 +17,7 @@ export default function Routes() {
                 <Route path="/" exact component={Login} />{/*Primeira rota*/}
                 <Route path="/register" component={Register} />{/*Seguenda rota*/}
                 <Route path="/profile" component={Profile} />{/*Terceira rota*/}
+                <Route path="/sales/new" component={NewSale} />{/*Quarta rota*/}
             </Switch>
         </BrowserRouter>
     );

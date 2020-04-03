@@ -19,6 +19,6 @@ module.exports = {
         }
 
         //Se tudo der certo, irá retornar os dados da ong
-        return response.json(ong);
+        return response.json(user);
     }
 }
