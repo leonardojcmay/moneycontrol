@@ -40,9 +40,47 @@
 .new-sale-container .content form {
     width: 100%;
     max-width: 450px;
+    
 }
 
-.new-sale-container .content form input,
-.new-sale-container .content form textarea {
+.new-sale-container .content form input{
     margin-top: 8px;
+}
+
+.new-sale-container .content .checkbox  {
+    display: flex;    
+}
+
+.new-sale-container .content form .checkbox label{
+    text-align: center;
+    margin: 8px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.new-sale-container .content form .checkbox input{
+    margin: 8px;
+}
+
+.new-sale-container .content form select{
+    width: 100%;
+    height: 60px;
+    color: #333;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    background: white;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 0 24px;
+}
+
+.new-sale-container .content form fieldset {
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+}
+
+.new-sale-container .content form fieldset input[type="text"]:disabled {
+    background: #ccc;
 }
