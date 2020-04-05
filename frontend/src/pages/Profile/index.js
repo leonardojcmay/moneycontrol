@@ -70,7 +70,7 @@ export default function Profile() {
             <header>
                 
                 <span>Bem vindo, {userName}</span>
-
+                
                 {/*Botão para cadastrar uma nova venda*/}
                 <Link className="button" to="/sales/new">Cadastrar nova venda</Link>
                 {/*Botão de Logout/Sair*/}
@@ -81,39 +81,39 @@ export default function Profile() {
 
             <h1>Vendas cadastradas</h1>
             
-            <ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Loja:</th>
+                        <th>Data:</th>
+                        <th>Cartao:</th>
+                        <th>Venda Parcelada?</th>
+                        <th>Quantidade de Parcelas:</th>
+                        <th>Valor Parcela:</th>
+                        <th>Valor Total:</th>
+                    </tr>
+                </thead>
                 {sales.map(sale => (    
                     /*Listagem de casos*/
-                    <li key={sale.id}>
+                    <tbody key={sale.id}>
+                        <tr>
+                            <td>{sale.loja}</td>
+                            <td>{sale.data}</td>
+                            <td>{sale.cartao}</td>
+                            <td>{sale.parcelamento}</td>
+                            <td>{sale.qtdParcela}</td>
+                            <td>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(sale.valorParcela)}</td>{/*Passando para R$*/}
+                            <td>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(sale.valorTotal)}</td>{/*Passando para R$*/}
+
+                            {/*Botão de apagar venda*/}
+                            <button onClick={() => handleDeleteSale(sale.id)} type="button">
+                            <FiTrash2 size={20} color="#a8a8b3" />
+                            </button>
+                        </tr>
                         
-                        <strong>Loja:</strong>
-                        <p>{sale.loja}</p>
-
-                        <strong>Data:</strong>
-                        <p>{sale.data}</p>
-
-                        <strong>Cartao:</strong>
-                        <p>{sale.cartao}</p>
-
-                        <strong>Venda Parcelada?</strong>
-                        <p>{sale.parcelamento}</p>
-
-                        <strong>Quantidade de Parcelas:</strong>
-                        <p>{sale.qtdParcela}</p>
-
-                        <strong>Valor Parcela:</strong>
-                        <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(sale.valorParcela)}</p>{/*Passando para R$*/}
-
-                        <strong>Valor Total:</strong>
-                        <p>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(sale.valorTotal)}</p>{/*Passando para R$*/}
-
-                        {/*Botão de apagar venda*/}
-                        <button onClick={() => handleDeleteSale(sale.id)} type="button">
-                        <FiTrash2 size={20} color="#a8a8b3" />
-                        </button>
-                    </li>
+                    </tbody>
                 ))}
-            </ul>
+            </table>
         </div>
     );
 }

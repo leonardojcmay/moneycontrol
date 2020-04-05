@@ -54,20 +54,24 @@ export default function NewSale() {
         } 
     }
 
-    // Função para deixar os campos de quantidade parcela e valor parcela em disabled caso não contenha parcelamento
-    // Wait for the page to finish loading
+    function refresh() {
+        window.location.reload()
+    }
+
+    //Função para deixar os campos de quantidade parcela e valor parcela em disabled caso não contenha parcelamento
+    //Aguardando o término do carregamento da página    
     document.addEventListener('DOMContentLoaded', function () {
-    // Attach `change` event listener to checkbox
-        document.getElementById('billing-checkbox').onchange = toggleBilling;
+        //Anexando o ouvinte de evento `change` à caixa de seleção
+        document.getElementById('parcela-checkbox').onchange = toggleParcela;
     }, false);
   
-    function toggleBilling() {
-        // Select the billing text fields
-        var billingItems = document.querySelectorAll('#billing input[type="text"]');
-  
-        // Toggle the billing text fields
-        for (var i = 0; i < billingItems.length; i++) {
-        billingItems[i].disabled = !billingItems[i].disabled;
+    function toggleParcela() {
+        //Selecionando os campos de texto de parcela
+        var parcelaItems = document.querySelectorAll('#parcela input[type="text"]');
+    
+        //Alternando os campos de texto de parcela
+        for (var i = 0; i < parcelaItems.length; i++) {
+            parcelaItems[i].disabled = !parcelaItems[i].disabled;
         }
     }
 
@@ -113,15 +117,17 @@ export default function NewSale() {
                         <option value="Banrisul">Banrisul</option>
                     </select>
 
-                    <fieldset id="billing">
+                    <fieldset id="parcela">
                         <div className="checkbox">
-                            <label for="billing-checkbox">Venda parcelada?</label>
-                            
-                            <label>Sim</label>
-                            <input type="checkbox" value="Sim" style={{width:25, height:30}} onChange={e => setParcelamento(e.target.value)} id="billing-checkbox"/>
-                                
-                            <label>Não</label>
-                            <input type="checkbox" value="Não" style={{width:25, height:30}} onChange={e => setParcelamento(e.target.value)}/>
+                            <label htmlFor="parcela-checkbox">Venda parcelada?</label>
+                            <div className="checkbox" onChange={toggleParcela}>
+                                <label>Sim</label>
+                                <input type="checkbox" value="Sim" style={{width:25, height:30}} onChange={e => setParcelamento(e.target.value)} id="parcela-checkbox"/>
+                            </div>
+                            <div className="checkbox">                                    
+                                <label>Não</label>
+                                <input type="checkbox" value="Não" style={{width:25, height:30}} onChange={e => setParcelamento(e.target.value)}/>
+                            </div>
                         </div>
 
                         <input 
