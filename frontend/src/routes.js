@@ -9,6 +9,8 @@ import Register from './pages/Register';
 import Profile from './pages/Profile';
 //Importando página NewSale: cadastrar nova venda
 import NewSale from './pages/NewSale';
+//Importando página Manage: gerir os resultados das vendas
+import Manage from './pages/Manage';
 
 export default function Routes() {
     return(
@@ -18,6 +20,7 @@ export default function Routes() {
                 <Route path="/register" component={Register} />{/*Seguenda rota*/}
                 <Route path="/profile" component={Profile} />{/*Terceira rota*/}
                 <Route path="/sales/new" component={NewSale} />{/*Quarta rota*/}
+                <Route path="/manage" component={Manage} />{/*Quinta rota*/}
             </Switch>
         </BrowserRouter>
     );

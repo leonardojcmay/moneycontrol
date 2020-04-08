@@ -10,8 +10,8 @@ import './styles.css';
 //Importando API
 import api from '../../services/api';
 
-//Listar os casos do usuario que esta logado no sistema
-export default function Profile() {
+//Listar todas as vendas do usuario que esta logado no sistema
+export default function Manage() {
     //Buscando o nome do usuario logado
     const userName = localStorage.getItem('userName');
     const userId = localStorage.getItem('userId');
@@ -22,7 +22,7 @@ export default function Profile() {
     //Voltando para o inicio após efetuar o Logout/Sair
     const history = useHistory();
 
-    //Listagem dos casos: utilizando função useEffect, que serve para disparar alguma função em algum determinado momento do componente. Por exemplo: assim que ele é mostrado em tela
+    //Listagem das vendas: utilizando função useEffect, que serve para disparar alguma função em algum determinado momento do componente. Por exemplo: assim que ele é mostrado em tela
     //primeira função: função para carregar os casos e tudo mais, segunda função: quando que essa função irá ser executada
     useEffect(() => {
         //Buscando no banco de dados
@@ -36,12 +36,12 @@ export default function Profile() {
         });//Gravando a resposta em um estado
     }, [userId]);//Colocado este parametro para que se caso o id do user mudar, recarregar as vendas desse novo user
 
-    //Função de deletar um caso
-    async function handleDeleteSale(id) {//Vai receber o id do caso que deseja excluir
+    //Função de deletar uma venda
+    async function handleDeleteSale(id) {//Vai receber o id da venda que deseja excluir
         try {
             
             await api.delete(`sales/${id}`, {
-                //Verificando se é o mesmo usuario que fez o cadastro do caso
+                //Verificando se é o mesmo usuario que fez o cadastro da venda
                 headers: {
                     Authorization: userId,
                 }
@@ -71,10 +71,6 @@ export default function Profile() {
                 
                 <span>Bem vindo, {userName}</span>
                 
-                <a></a>
-                {/*Botão de gerir*/}
-                <Link className="button" to="/manage">Gerenciar</Link>
-
                 {/*Botão para cadastrar uma nova venda*/}
                 <Link className="button" to="/sales/new">Cadastrar nova venda</Link>
 

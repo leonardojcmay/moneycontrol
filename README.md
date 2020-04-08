@@ -36,5 +36,6 @@
 <br>- Getnet - Débito
 <br>- Banrisul
 <br>- Parcelado(sim/não)
+<br>- Quantidade de parcelas
 <br>- Valor da parcela
 <br>- Valor total da venda
