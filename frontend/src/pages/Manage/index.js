@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 //Importando pacote, para que em toda rota não precisa recarregar toda a página e sim somente mudar de rota
 import { Link, useHistory } from 'react-router-dom';
 //Importando pacote de icons
-import { FiPower, FiTrash2 } from 'react-icons/fi';
+import { FiPower, FiTrash2, FiArrowLeft } from 'react-icons/fi';
 //Importando estilização
 import './styles.css';
 //Impotando imagem utilizada na página
@@ -64,6 +64,11 @@ export default function Manage() {
         history.push('/');
     }
 
+    //Função de voltar
+    function handleBack() {
+        history.push('/profile');
+    }
+
     return (
         <div className="profile-container">
             {/*Header: parte de cima no cabeçalho*/}
@@ -74,6 +79,11 @@ export default function Manage() {
                 {/*Botão para cadastrar uma nova venda*/}
                 <Link className="button" to="/sales/new">Cadastrar nova venda</Link>
 
+                {/*Botão de Voltar*/}
+                <button onClick={handleBack} type="button">
+                    <FiArrowLeft size={18} color="#333" />
+                </button>
+
                 {/*Botão de Logout/Sair*/}
                 <button onClick={handleLogout} type="button">
                     <FiPower size={18} color="#E02041" />
@@ -81,42 +91,9 @@ export default function Manage() {
 
             </header>
 
-            <h1>Vendas cadastradas</h1>
+            <h1>Listagem de vendas</h1>
             
-            <table>
-                <thead>
-                    <tr>
-                        <th>Loja:</th>
-                        <th>Data:</th>
-                        <th>Cartao:</th>
-                        <th>Venda Parcelada?</th>
-                        <th>Quantidade de Parcelas:</th>
-                        <th>Valor Parcela:</th>
-                        <th>Valor Total:</th>
-                    </tr>
-                </thead>
-                {sales.map(sale => (    
-                    /*Listagem de casos*/
-                    <tbody key={sale.id}>
-                        <tr>
-                            <td>{sale.loja}</td>
-                            <td>{sale.data}</td>
-                            <td>{sale.cartao}</td>
-                            <td>{sale.parcelamento}</td>
-                            <td>{sale.qtdParcela}</td>
-                            <td>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(sale.valorParcela)}</td>{/*Passando para R$*/}
-                            <td>{Intl.NumberFormat('pt-BR', {style: 'currency', currency: 'BRL'}).format(sale.valorTotal)}</td>{/*Passando para R$*/}
-
-                            {/*Botão de apagar venda*/}
-                            <button onClick={() => handleDeleteSale(sale.id)} type="button">
-                            <FiTrash2 size={20} color="#a8a8b3" />
-                            </button>
-
-                        </tr>
-                        
-                    </tbody>
-                ))}
-            </table>
+            
         </div>
     );
 }
