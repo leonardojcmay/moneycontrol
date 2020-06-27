@@ -1,0 +1,2 @@
+if (dataLayer[0].carrefourType == 'NON FOOD') { document.querySelector('body').classList.add('produto-no-food') }
+$('.ccol-md-3').addClass('col-md-3')

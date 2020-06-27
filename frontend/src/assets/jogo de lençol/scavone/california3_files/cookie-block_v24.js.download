@@ -1,0 +1,163 @@
+/* v24 - 14/05 - 17:00 - bloqueio side RJ para o dia 14/5 e 15/5 */
+
+$(function(){
+
+    /* se for página de food */
+    if ( $('.cep-consultation').not('.hide').length || location.pathname === '/carrinho' || location.pathname === '/dicas/mercado' ){
+    
+    /**
+     * LIGHTBOX DE ALTA DEMANDA
+     */
+    $('<style type="text/css"> .bg-mercado-alerta.is--show{width: 100%; height: 1000px; background: rgba(0, 0, 0, 0.88); display: block; position: fixed; z-index: 40; top: -110px; left: 0; overflow: unset;}.modal-mercado-alerta{background: #0050a4; cursor: default; position: fixed; top: 50%; left: 50%; width: 500px; box-shadow: 0px 0px 7px #999; transform: scale(0);}.modal-mercado-alerta--wrapper{padding: 0px; position: relative; /* border: 1px solid red; */}.modal-mercado-alerta.is--hidden{transform: scale(0) translate(-50%, -50%); opacity: 0; z-index: -1; /* animation: hide 0.25s;*/}.modal-mercado-alerta.is--show{transform: scale(1) translate(-50%, -50%); opacity: 1; z-index: 9999; /*animation: show 0.25s;*/}.modal-mercado-alerta--mobile{display: none;}.text-modal-alerta{position: absolute; top: 50%; right: 30px; display: flex; flex-direction: column; width: 327px; transform: translateY(-50%);}.text-modal-alerta p{margin: 0; margin-bottom: 10px; color: #fff; line-height: 22px; font-size: 15px; text-align: left;}.btns-modal-alerta{position: static; /* bottom: 36px; display: flex; flex-direction: column; left: 30%; */}.btns-modal-alerta button{display: block; font-size: 14px; font-family: "ubuntu-bold", sans-serif; border: 0; padding: 5px 40px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -o-transition: all .3s ease; transition: all .3s ease;}.btns-modal-alerta .modal-mercado-alerta--btn{margin-bottom: 15px; background: #8cde28;}.btns-modal-alerta .modal-mercado-alerta--btn:hover{background: #77b729;}.btns-modal-alerta .modal-mercado-alerta--btn a{color: #fff; text-decoration: none; line-height: 14px; padding: 7px 25px;}button.modal-mercado-alerta--btn--buy{background: #fff; color: #1e5bc5; opacity: 1;}button.modal-mercado-alerta--btn--buy:hover{opacity: 0.4;}@media (max-width: 600px){.modal-mercado-alerta{width: 90%;}.modal-mercado-alerta .wrapper{width: 100%;}.modal-mercado-alerta--desk{display: none;}.modal-mercado-alerta--mobile{display: block;}img.modal-mercado-alerta--mobile{width: 100%;}.text-modal-alerta p{margin: 0px; margin-bottom: 20px; line-height: 21px; font-size: 18px; text-align: center;}.btns-modal-alerta{/* left: 10%; bottom: 16vh; flex-direction: row; vertical-align: middle; justify-content: space-between; width: 80%; */}.btns-modal-alerta button{font-size: 20px; padding: 15px; line-height: 14px; text-align: center; width: 100%;}.btns-modal-alerta .modal-mercado-alerta--btn{margin-bottom: 0;}button.modal-mercado-alerta--btn--buy{opacity: 1;}.btns-modal-alerta .modal-mercado-alerta--btn a{padding: 0; line-height: 12px;}.text-modal-alerta{width: 93%; right: 4%; bottom: 25%; text-align: center;}}</style><div class="bg-mercado-alerta is--hidden"></div><section class="modal-mercado-alerta is--hidden"> <div class="wrapper"> <div class="modal-mercado-alerta--content"><img src="https://static.carrefour.com.br/imagens/site/2020/etc/cookie-block/alerta-carrefour-mercado_d.png" class="modal-mercado-alerta--desk"><img src="https://static.carrefour.com.br/imagens/site/2020/etc/cookie-block/alerta-carrefour-mercado_m.png" class="modal-mercado-alerta--mobile"> <div class="text-modal-alerta"> <p>Devido ao aumento da demanda de pedidos de compra de alimentos na sua região, neste momento não estamos aceitando novos pedidos. <br>Por favor tente novamente amanhã.</p><div class="btns-modal-alerta"> <button class="modal-mercado-alerta--btn--buy">Ok</button> </div></div></div></div></section>').appendTo($("body"));
+    
+    
+    /**
+     * LIGHTBOX PRIORIDADE DE COMPRA
+     */
+    $('<style type="text/css">.bg-homepage.is--show{width: 100%;height: 1000px;background: rgba(0, 0, 0, 0.88);display: block;position: fixed;z-index: 40;top: -110px;left: 0;overflow: unset;}.modal-homepage{background: #fff;cursor: default;position: fixed;top: 50%;left: 50%;width: 620px;box-shadow: 0px 0px 7px #999;transform: scale(0);}.modal-homepage--wrapper{padding: 0px;position: relative;/* border: 1px solid red; */}.modal-homepage.is--hidden{transform: scale(0) translate(-50%, -50%);opacity: 0;z-index: -1;/* animation: hide 0.25s;*/}.modal-homepage.is--show{transform: scale(1) translate(-50%, -50%);opacity: 1;z-index: 9999;/*animation: show 0.25s;*/}.modal-homepage--mobile{display: none;}.modal-homepage--close{position: absolute;top: -12px;right: -11px;width: 20px;height: 20px;background: #000;cursor: pointer;text-align: center;-webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px;}.modal-homepage--close:before,.modal-homepage--close:after{content: "";height: 13px;width: 2px;display: inline-block;background: #fff;position: absolute;left: 9px;top: 3px;}.modal-homepage--close:before{transform: rotate(45deg);}.modal-homepage--close:after{transform: rotate(-45deg);}.text-modal{position: absolute;bottom: 108px;right: 10px;display: flex;flex-direction: column;width: 323px;}.text-modal p{margin: 0 0 10px;color: #fff;line-height: 18px;font-size: 13px;}.text-modal p:nth-child(3){margin: 0;}.btns-modal{position: absolute;bottom: 25px;display: flex;flex-direction: column;left: 46%;}.btns-modal button{display: block;font-size: 14px;font-family: "ubuntu-bold" ,sans-serif;border: 0;padding: 7px 0px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;-webkit-transition: all .3s ease;-moz-transition: all .3s ease;-o-transition: all .3s ease;transition: all .3s ease;}.btns-modal .modal-homepage--btn{margin-bottom: 15px;background: #8cde28;}.btns-modal .modal-homepage--btn:hover{background: #77b729;}.btns-modal .modal-homepage--btn a{color: #fff;text-decoration: none;line-height: 14px;padding: 7px 25px;}button.modal-homepage--btn--buy{background: #fff;color: #1e5bc5;opacity: 1;}button.modal-homepage--btn--buy:hover{opacity: 0.4;}@media (max-width: 600px){.modal-homepage{width: 90%;}.modal-homepage .wrapper{width:100%;}.modal-homepage--desk{display: none;}.modal-homepage--mobile{display: block;}img.modal-homepage--mobile{width: 100%;}.text-modal p{margin: 0 0 15px;line-height: 18px;font-size: 15px;}.btns-modal{left: 10%;bottom: 5vh;flex-direction: row;vertical-align: middle;justify-content: space-between;width: 80%;}.btns-modal button{font-size: 12px;padding: 5px;line-height: 14px;text-align: center;width: 49%;}.btns-modal .modal-homepage--btn{margin-bottom: 0;}button.modal-homepage--btn--buy{opacity: 1;}.btns-modal .modal-homepage--btn a{padding: 0;line-height: 12px;}.text-modal{width: 86%;right: 4%;bottom: 18%;}}@media (max-width:375px){.text-modal{bottom: 7.5%;}.btns-modal{bottom: 2vh;}}@media (max-width:320px){.text-modal p{font-size: 11px;line-height: 14px;}.text-modal br{display:none;}}</style><div class="bg-homepage is--hidden"></div><section class="modal-homepage is--hidden"><div class="wrapper"><div class="modal-homepage--close"></div><div class="modal-homepage--content"><img src="https://static.carrefour.com.br/imagens/site/2020/etc/modal-home-mercado/ligthbox-mensagem_v4-d.png" class="modal-homepage--desk"><img src="https://static.carrefour.com.br/imagens/site/2020/etc/modal-home-mercado/ligthbox-mensagem_v5-m.png" class="modal-homepage--mobile"><div class="text-modal"><p>Devido à alta demanda e o momento em que nossa sociedade atravessa, estamos, neste momento, priorizando o nosso site aos clientes que mais necessitam (idosos, pessoas em quarentena, pessoas com mobilidade reduzida e pessoa com deficiência).</p><p>Caso você não pertença à nenhum grupo citado acima, pedimos gentilmente que procure a Loja Carrefour mais próxima de você!</p><p>Contamos com a sua colaboração.</p><p><b>Obrigado!</b></p></div><div class="btns-modal"><button class="modal-homepage--btn"><a href="https://www.carrefour.com.br/localizador-de-lojas?crfimt=home|carrefour|bn|bns|lightbox-home_localizador-de-lojas_carrefour-e_180320">Procurar a loja mais próxima</a></button><button class="modal-homepage--btn--buy">Continuar Comprando</button></div></div></div></section>').appendTo($("body"));
+    
+    /** 
+     * SIDESTORE BLOCK
+     */
+    
+    (function () {
+    
+    
+        class SideStoreBlock {
+    
+            /* INIT - FUNCOES PARA COOKIES */
+            setCookie(cname, cvalue, exdays) {
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;domain=.carrefour.com.br";
+            }
+    
+            getCookie(cname) {
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') {
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0) {
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+            /* END - FUNCOES PARA COOKIES */
+    
+            constructor() {
+    
+                /* recupera sides atendidas no CEP */
+                this.warehouses = this.getCookie("selectedWarehouses");
+    
+                this.regex = null;
+    
+                if ( (+ new Date () >= + new Date(2020, 4, 14, 14)) && (+ new Date () < + new Date(2020, 4, 15)) ){
+                    /* regex de teste com as sides bloqueadas */
+                    this.regex = new RegExp("(WH\-ERM)|(WH\-ERM)", "gi");
+                }
+
+                if ( (+ new Date () >= + new Date(2020, 4, 15, 14)) && (+ new Date () < + new Date(2020, 4, 16)) ){
+                    /* regex de teste com as sides bloqueadas */
+                    this.regex = new RegExp("(WH\-ERM)|(WH\-ERM)", "gi");
+                }
+                
+                /* se houver CEP sendo consultado */
+                if ( this.warehouses.length && this.regex ) {
+                    /* consulta se side bloqueada foi selecionada */
+                    if (this.regex.test(this.warehouses) ) {
+                        /* se sim, aciona bloqueio */
+                        this.setBlock();
+                    } else {
+                        /* se não, desbloqueia */
+                        this.setUnblock();
+                    }
+        
+                    /* se existe bloqueio */
+                    if (this.getCookie('sideblock') == 'true') {
+                        /* abre lightbox de não entrega */
+                        this.openBlockLightbox();
+                        /* apaga cookies relevantes */
+                        this.eraseCookies();
+                        /* esconde botões */
+                        /* this.blockButtons(); */
+                    } else {
+                        /* lightbox de alta demanda */
+                        this.openWarningLightbox();
+                    }
+                } else {
+                    if ( this.warehouses.length ) {
+                        /* lightbox de alta demanda */
+                        this.openWarningLightbox();
+                    }
+                }
+                
+    
+            }
+    
+            setBlock() {
+                this.setCookie('sideblock', 'true', 1);
+            }
+    
+            setUnblock() {
+                this.setCookie('sideblock', 'false', 1);
+            }
+    
+            blockButtons() {
+                $('.prd-add-block, .AddToCart-AddToCartAction').css('visibility', 'hidden');
+                $('.navbar-fixed-bottom').hide();
+                $('[data-widget=frequentlyboughttogether]').remove();
+            }
+    
+            /**
+             * Modal de alta demanda
+             */
+            openBlockLightbox() {
+                $('.bg-mercado-alerta, .modal-mercado-alerta').toggleClass('is--hidden is--show');
+                $('.modal-mercado-alerta--btn--buy').click(function () {
+                    $('.bg-mercado-alerta, .modal-mercado-alerta').toggleClass('is--hidden is--show');
+                    location.reload();
+                });
+            }
+    
+            /**
+             * Modal de prioridade de compra - idosos
+             */
+            openWarningLightbox() {
+
+                return false;
+
+                var p = this;
+                if ( this.getCookie("food_lightbox") !== 'true' ) {
+                    $(".bg-homepage, .modal-homepage").toggleClass('is--hidden is--show');
+                }
+    
+                $(".modal-homepage--btn a, .modal-homepage--btn--buy, .modal-homepage--close").click(function () {
+                    p.setCookie('food_lightbox', 'true', 1);
+                    $(".bg-homepage, .modal-homepage").toggleClass('is--hidden is--show');
+                });
+            }
+    
+            eraseCookies() {
+                this.setCookie('cepConsultation', '', -1);
+                this.setCookie('originalZipCode', '', -1);
+                this.setCookie('selectedPointOfServices', '', -1);
+                this.setCookie('selectedWarehouses', '', -1);
+                this.setCookie('sideStoreOn', '', -1);
+                this.setCookie('statusCepConsultation', '', -1);
+                this.setCookie('validateDeliveryAddress', '', -1);
+            }
+    
+        }
+    
+        new SideStoreBlock();
+    
+    })();
+    
+    } /* fim if se é página de food */
+    
+    }); /* fim onload */

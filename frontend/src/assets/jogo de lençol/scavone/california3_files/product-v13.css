@@ -1,0 +1,393 @@
+/*AJUSTANDO modais */
+
+
+/*04/06 - 18:23 */
+
+
+/*DESKTOP*/
+
+@media (min-width: 1200px) {
+	.modal.in .modal-dialog {
+    	margin-top: 18%;
+	}
+    .container-fluid {
+        width: 1208px;
+        padding: 0;
+    }
+    .row {
+        margin: 0;
+    }
+    /*TAMANHO DOS CAMPOS*/
+    .block-product-details .product-details-panel .col-xs-12.col-sm-12.col-md-6.no-padding:first-child {
+        width: 468px;
+        margin-right: 54px;
+    }
+    .block-product-details .product-details-panel div .col-xs-12.col-sm-12.col-md-6.no-padding:first-child {
+        width: 686px;
+        margin-right: 0;
+    }
+    /*THUMBUS LATERAIS*/
+    .block-thumb-desktop-gallery.row {
+        width: 74px;
+        padding: 0;
+        margin-right: 24px;
+    }
+    .carousel.gallery-carousel.js-gallery-carousel {
+        margin: 0;
+    }
+    .carousel.gallery-carousel.js-gallery-carousel .owl-item {
+        width: 70px !important;
+        height: 70px;
+    }
+    .carousel.gallery-carousel.js-gallery-carousel .owl-item img {
+        width: 70px;
+        height: 70px;
+    }
+    .block-gallery .block-thumb-ver-mais {
+        margin: 0;
+        width: 75px;
+        height: 70px;
+        padding: 15px 0 0 0;
+    }
+    /*IMAGEM PRINCIPAL*/
+    .block-image-gallery {
+        margin: 0;
+        padding: 0;
+        width: 370px;
+    }
+    .block-gallery .carousel {
+        margin: 0;
+    }
+    .block-gallery .carousel .item {
+        margin: 0;
+    }
+    /*INFO PRODUTO*/
+    .header-product-details .product-title-page h1.title-product {
+        font-size: 25px;
+    }
+    .header-product-details .product-title-page {
+        padding: 0;
+    }
+    .header-product-details .cod-product {
+        padding: 0;
+    }
+    .block-img-stamp-list {
+        margin: 0;
+    }
+    .block-price .price-default .prince-product-default {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .img-promotion {
+        margin: 0 0 10px 0;
+    }
+    .img-promotion:last-child {
+        margin-bottom: 0;
+    }
+    .sust-block-price-product {
+        padding: 0;
+        width: 225px;
+    }
+    .container-product-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .block-list-stamp-product {
+        order: 0;
+    }
+    .block-product-details .block-variant {
+        order: 1;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        border: 0;
+    }
+    .block-sust-variant {
+        display: flex;
+        align-items: center;
+    }
+    .block-price {
+        order: 2;
+    }
+    .container-product-info hr {
+        margin: 0;
+        border: 0;
+    }
+    #productQuantity {
+        padding: 0;
+        margin-right: 10px;
+        width: unset;
+    }
+    #productQuantity .block-variant-qtd .input-group.qty-selector button {
+        width: 20px;
+    }
+    .block-variant-qtd .js-qty-selector-input {
+        width: 50px;
+    }
+    .block-product-details .block-variant .pdp__frete--ml13 {
+        margin: 0;
+        padding: 0;
+        left: 0;
+        width: unset;
+    }
+    .block-padding-zero {
+        float: left;
+    }
+    .block-desk-tab-delivery .row .col-md-12.col-xs-12.col-sm-12 {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: unset;
+    }
+    .block-social-network-favoritos {
+        margin: 0 5px 0 0px;
+        padding: 0;
+        order: 0;
+        width: auto;
+    }
+    #block-view-delivery {
+        margin-left: -10px;
+    }
+    .block-consultant-cep {
+        padding: 0;
+        order: 1;
+        width: 200px;
+    }
+    .block-btn-calc-delivery .btn-calc-cep {
+        width: 84px;
+    }
+    .block-social-network-favoritos .block-btn-social-media {
+        margin: 0;
+    }
+    .block-social-network-favoritos .block-btn-whilist-product,
+    .block-social-network-favoritos .block-btn-social-media {
+        margin-right: 20px;
+    }
+    .sust-block-promotion-product {
+        display: flex;
+        margin-top: 0;
+        width: 461px;
+    }
+    .sust-block-promotion-product .col-md-12.no-padding {
+        display: flex;
+    }
+    .sust-block-promotion-product span.icon-cartcarrefour {
+        display: none;
+    }
+    .sust-block-promotion-product .col-md-12.no-padding .col-md-2.no-padding:first-child {
+        display: none;
+    }
+    .sust-block-promotion-product .col-md-10 {
+        padding-left: 0;
+        display: flex;
+        flex-flow: wrap-reverse;
+        width: 100%;
+    }
+    .sust-block-promotion-product .col-md-10 p {
+        display: none;
+    }
+    .block-payment.col-xs-6.col-sm-12.col-md-7 {
+        padding: 0;
+        order: 1;
+        width: 123px;
+        margin-top: 5px;
+    }
+    .sust-block-promotion-product .price-carrefour span {
+        padding: 0;
+        width: auto;
+    }
+    .sust-block-promotion-product .price-carrefour span:nth-child(2) {
+        margin-left: 10px;
+    }
+    .block-price .product-details .col-md-1.no-padding:nth-child(2) {
+        display: none;
+    }
+    #productQuantity .block-sust-variant {
+        position: unset;
+    }
+    .ask-for-yours {
+        order: 0;
+        width: 338px;
+        padding: 0;
+    }
+    .ask-for-yours:before {
+        content: "Com cartão Carrefour";
+        display: inline-block;
+        color: #818080;
+    }
+    .ask-for-yours span {
+        display: inline-block;
+        margin: 0;
+    }
+    .ask-for-yours span:before {
+        content: "";
+        background-image: url(https://static.carrefour.com.br/imagens/site/2020/codigos-especiais/pdp/icon/cartao-c4.png);
+        width: 47px;
+        height: 29px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: 0;
+    }
+    .offers .send-results {
+        order: 1;
+    }
+    .offers .block-links {
+        order: 1;
+        padding-bottom: 5px;
+        margin-top: 25px;
+    }
+    .variants.destaque .block-sust-variant br {
+        display: none;
+    }
+    .offers .block-variant-product.col-md-3.col-sm-4.col-xs-12 {
+        width: 115px;
+        padding: 0;
+        margin-right: 10px;
+    }
+    .deadline.block-results.col-sm-12.col-md-4 {
+        display: none;
+    }
+    .offers .send-results .prices.block-results.col-sm-12.col-md-4 {
+        padding: 0;
+        width: 226px;
+        margin-right: 40px;
+    }
+    .offers .send-results .card.block-results.col-sm-12.col-md-4 {
+        padding: 0;
+    }
+    .offers .send-results .card.block-results.col-sm-12.col-md-4 .image-card.col-xs-2.col-sm-2 {
+        display: none;
+    }
+    .offers .send-results .card.block-results.col-sm-12.col-md-4 .description-card.col-xs-10.col-sm-10 {
+        padding: 0;
+        display: inline-flex;
+        width: 381px;
+        flex-flow: wrap;
+    }
+    .offers .send-results .card.block-results.col-sm-12.col-md-4 .description-card.col-xs-10.col-sm-10 p:first-child {
+        display: none;
+    }
+    .offers .block-results .installment-payment {
+        display: block;
+        order: 2;
+        margin-bottom: 18px;
+    }
+    .offers .send-results p.installment {
+        order: 3;
+        margin: 0 0 0 5px;
+        line-height: 22px;
+    }
+    .offers .send-results .ask-for-yours-bybox {
+        order: 1;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 18px;
+    }
+    .offers .send-results .ask-for-yours-bybox:before {
+        content: "Com cartão Carrefour";
+        color: #818080;
+    }
+    .offers .send-results .ask-for-yours-bybox span:before {
+        content: "";
+        background-image: url(https://static.carrefour.com.br/imagens/site/2020/codigos-especiais/pdp/icon/cartao-c4.png);
+        width: 47px;
+        height: 29px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .list-group-item.item-offer:before {
+        content: 'Consulte o seu CEP';
+        position: absolute;
+        right: 10px;
+        color: #4d4d4d;
+    }
+    .offers .block-links .block-choice a {
+        color: #4D4D4D;
+        text-decoration: none;
+    }
+    .offers .block-links .block-choice a span {
+        text-decoration: none;
+    }
+    .offers .block-links .block-choice a span u {
+        text-decoration: none;
+        color: #4D4D4D;
+    }
+    .offers .item-offer:first-child .font-mirakl-vendor-name {
+        text-decoration: underline;
+        color: #4d4d4d;
+    }
+    .offers .item-offer:first-child .font-mirakl-vendor-name,
+    .offers .item-offer .font-mirakl-vendor-name {
+        font-size: 0 !important;
+    }
+    .offers .item-offer .font-mirakl-vendor-name strong {
+        font-size: 12px;
+        position: relative;
+        top: -2px;
+    }
+    .offers .item-offer .font-mirakl-vendor-name strong:before {
+        content: 'Vendido e entregue por ';
+        font-size: 11px;
+        font-weight: 400;
+        margin-left: 5px;
+        text-decoration: none !important;
+    }
+    .margin-bottom-for-product-promotions:first-child {
+        margin-bottom: 18px;
+    }
+    .block-product-details .product-details-panel .price-in-cash-blue {
+        font-size: 18px;
+    }
+    .block-price .price-default .show-De-Por {
+        padding-left: 0;
+    }
+    .block-price .price-default .prince-product-default {
+        padding: 0;
+    }
+    .installment.col-xs-12.col-sm-12.col-md-12 {
+        padding: 0;
+    }
+    .block-margin-bottom-buttom {
+        padding: 0;
+    }
+    #botaoAdicionarNoCarrinhoDiv {
+        width: 283px;
+        margin-right: 10px;
+    }
+}
+
+#botaoAdicionarNoCarrinhoDiv {
+    display: none;
+}
+
+
+/* Ajustes PDP MATHEUS */
+
+@media only screen and (min-width:1200px) {
+    .block-sust-variant div.block-variant-product:nth-of-type(1) {
+        padding: 0px;
+        width: 105px
+    }
+    .block-sust-variant div.block-variant-product:nth-of-type(2) {
+        width: 100px;
+    }
+    .block-variant-color.variant-block.styled-select select:nth-of-type(1) {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width:1199px) {
+    .block-sust-variant div.block-variant-product:nth-of-type(1) {
+        padding-bottom: 10px;
+    }
+    .col-md-10.col-xs-12.col-sm-12.pdp__frete--ml13 {
+        left: 0;
+        margin-left: 0px;
+    }
+}
+
+
+/* //  Ajustes PDP MATHEUS */

@@ -1,0 +1,1058 @@
+[class^="cmscomponent-"] {
+  padding: 0;
+}
+[class^="cmscomponent-"].mt {
+  padding-top: 20px;
+}
+[class^="cmscomponent-"].mb {
+  padding-bottom: 20px;
+}
+[class^="cmscomponent-"].mtb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+[class^="cmscomponent-"].ml {
+  padding-left: 20px;
+}
+[class^="cmscomponent-"].mr {
+  padding-right: 20px;
+}
+[class^="cmscomponent-"].mlr {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+[class^="cmscomponent-"] .htitle {
+  clear: both;
+  width: 100%;
+  height: auto;
+  background-position-y: 50%!important;
+  padding: 0;
+  margin: 0 0 22px 0;
+}
+[class^="cmscomponent-"] .htitle h1,
+[class^="cmscomponent-"] .htitle h2,
+[class^="cmscomponent-"] .htitle h3,
+[class^="cmscomponent-"] .htitle h4,
+[class^="cmscomponent-"] .htitle h5,
+[class^="cmscomponent-"] .htitle h6 {
+  width: auto;
+  display: table;
+  background-color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #1e56c9;
+  margin: 0 20px;
+  padding: 0 10px;
+}
+[class^="cmscomponent-"].centitl .htitle {
+  background: url('/_ui/responsive/theme-carrefour/images/icons/line-title.png') repeat-x 0 20px;
+}
+[class^="cmscomponent-"].centitl .htitle h1,
+[class^="cmscomponent-"].centitl .htitle h2,
+[class^="cmscomponent-"].centitl .htitle h3,
+[class^="cmscomponent-"].centitl .htitle h4,
+[class^="cmscomponent-"].centitl .htitle h5,
+[class^="cmscomponent-"].centitl .htitle h6 {
+  text-align: center;
+  margin: 0 auto;
+}
+[class^="cmscomponent-"].rigtitl .htitle {
+  background: url('/_ui/responsive/theme-carrefour/images/icons/line-title.png') repeat-x 0 20px;
+}
+[class^="cmscomponent-"].rigtitl .htitle h1,
+[class^="cmscomponent-"].rigtitl .htitle h2,
+[class^="cmscomponent-"].rigtitl .htitle h3,
+[class^="cmscomponent-"].rigtitl .htitle h4,
+[class^="cmscomponent-"].rigtitl .htitle h5,
+[class^="cmscomponent-"].rigtitl .htitle h6 {
+  text-align: right;
+  margin: 0 20px 0 auto;
+}
+[class^="cmscomponent-"].leftitl .htitle {
+  background: url('/_ui/responsive/theme-carrefour/images/icons/line-title.png') repeat-x 0 20px;
+}
+[class^="cmscomponent-"].leftitl .htitle h1,
+[class^="cmscomponent-"].leftitl .htitle h2,
+[class^="cmscomponent-"].leftitl .htitle h3,
+[class^="cmscomponent-"].leftitl .htitle h4,
+[class^="cmscomponent-"].leftitl .htitle h5,
+[class^="cmscomponent-"].leftitl .htitle h6 {
+  text-align: left;
+}
+[class^="cmscomponent-"].centit .htitle h1,
+[class^="cmscomponent-"].centit .htitle h2,
+[class^="cmscomponent-"].centit .htitle h3,
+[class^="cmscomponent-"].centit .htitle h4,
+[class^="cmscomponent-"].centit .htitle h5,
+[class^="cmscomponent-"].centit .htitle h6 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+[class^="cmscomponent-"].rigtit .htitle h1,
+[class^="cmscomponent-"].rigtit .htitle h2,
+[class^="cmscomponent-"].rigtit .htitle h3,
+[class^="cmscomponent-"].rigtit .htitle h4,
+[class^="cmscomponent-"].rigtit .htitle h5,
+[class^="cmscomponent-"].rigtit .htitle h6 {
+  text-align: right;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+[class^="cmscomponent-"].leftit .htitle h1,
+[class^="cmscomponent-"].leftit .htitle h2,
+[class^="cmscomponent-"].leftit .htitle h3,
+[class^="cmscomponent-"].leftit .htitle h4,
+[class^="cmscomponent-"].leftit .htitle h5,
+[class^="cmscomponent-"].leftit .htitle h6 {
+  text-align: left;
+  margin-left: 0;
+  padding: 0;
+}
+.cmscomponent-carousel {
+  margin: 10px 0 22px;
+}
+@media (min-width: 1024px) {
+  .cmscomponent-carousel .js-owl-lateral .owl-controls .owl-buttons .owl-prev {
+    left: 11px !important;
+  }
+  .cmscomponent-carousel .js-owl-lateral .owl-controls .owl-buttons .owl-next {
+    right: 11px !important;
+  }
+}
+.cmscomponent-carousel .carousel,
+.cmscomponent-carousel .owl-carousel,
+.cmscomponent-carousel .js-owl-carousel {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cmscomponent-carousel .carousel.loading,
+.cmscomponent-carousel .owl-carousel.loading,
+.cmscomponent-carousel .js-owl-carousel.loading {
+  background: url("https://www.carrefour.com.br/_ui/responsive/common/images/spinner.gif") no-repeat center center;
+}
+.cmscomponent-carousel .carousel.loading .owl-controls,
+.cmscomponent-carousel .owl-carousel.loading .owl-controls,
+.cmscomponent-carousel .js-owl-carousel.loading .owl-controls {
+  opacity: 0;
+}
+.cmscomponent-carousel .carousel .thumb,
+.cmscomponent-carousel .owl-carousel .thumb,
+.cmscomponent-carousel .js-owl-carousel .thumb {
+  overflow: hidden;
+  height: 200px;
+}
+.cmscomponent-carousel .carousel .thumb .empty-img,
+.cmscomponent-carousel .owl-carousel .thumb .empty-img,
+.cmscomponent-carousel .js-owl-carousel .thumb .empty-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background: #f5f5f5;
+}
+.cmscomponent-carousel .carousel .owl-item,
+.cmscomponent-carousel .owl-carousel .owl-item,
+.cmscomponent-carousel .js-owl-carousel .owl-item {
+  position: relative;
+  z-index: 0;
+}
+.cmscomponent-carousel .carousel .owl-item .item,
+.cmscomponent-carousel .owl-carousel .owl-item .item,
+.cmscomponent-carousel .js-owl-carousel .owl-item .item {
+  padding: 2px;
+  position: relative;
+  margin: 0 -1px 0 0;
+  border: 1px solid #e5e5e5;
+  /* .item-name{
+          display: -webkit-box;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          margin: 0 5%;
+          height: 45px;
+          max-height: 45px;
+          font-size: 13px;
+          line-height: 15px;
+          text-align: left;
+          color: #4d4d4d;
+        }
+        .item-price{
+          margin: 0 5%;
+          text-align: left;
+          .price-old{
+            font-size: 11px;
+            line-height: 16px;
+            color: #818080;
+          }
+          .price-new{
+            display: block;
+            margin-bottom: -4px;
+            margin-top: -2px;
+            font-size: 20px;
+            line-height: 20px;
+            color: #ff1654;
+            bdi{
+              font-size: 12px;
+            }
+          }
+        }
+        .paymente-cart-installment{
+          margin: 0 5%;
+          text-align: left;
+          font-size: 12px;
+          display: block;
+          color: #1e56c9;
+          bdi{
+            color: #969696;
+          }
+        } */
+}
+.cmscomponent-carousel .carousel .owl-item:hover,
+.cmscomponent-carousel .owl-carousel .owl-item:hover,
+.cmscomponent-carousel .js-owl-carousel .owl-item:hover {
+  z-index: 90;
+}
+.cmscomponent-carousel .carousel .owl-item:hover .item,
+.cmscomponent-carousel .owl-carousel .owl-item:hover .item,
+.cmscomponent-carousel .js-owl-carousel .owl-item:hover .item {
+  padding: 1px;
+  border: 2px solid #2edef8;
+  /*button.btn-add-cart{
+            opacity: 1;
+            transition: all .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            &:hover{
+              background-color: #ff1654;
+              -webkit-box-shadow: 0px 0px 7px 0px rgba(237,12,110,0.45);
+              -moz-box-shadow: 0px 0px 7px 0px rgba(237,12,110,0.45);
+              box-shadow: 0px 0px 7px 0px rgba(237,12,110,0.45);
+            }
+          }*/
+}
+.cmscomponent-carousel .carousel .item,
+.cmscomponent-carousel .owl-carousel .item,
+.cmscomponent-carousel .js-owl-carousel .item {
+  /* .block-add-favoritos-cart.unavaiable{
+        .warn{
+          margin: 0 5%;
+          padding: 5px 0 15px 0;
+          text-align: left;
+          font-size: 13px;
+          line-height: 15px;
+          color: #1e56c9;
+          bdi{
+            display: block;
+            color: #b2b2b2;
+            font-size: 11px;
+          }
+        }
+        .btn{
+          opacity: .5;
+          padding: 0;
+          width: 91%;
+          height: 36px;
+          border: 2px solid #b2b2b2;
+          background-color: white;
+          border-radius: 8px;
+          font-size: 13px;
+          line-height: 36px;
+          color: #b2b2b2;
+          font-weight: 600;
+        }
+      } */
+  /* button.btn-add-cart{
+        opacity: .5;
+        padding: 0;
+        width: 91%;
+        height: 36px;
+        background-color: #ed0c6e;
+        border-radius: 8px;
+        font-size: 13px;
+        line-height: 36px;
+        color: white;
+        font-weight: 600;
+        &:before{
+          content: "COMPRAR";
+        }
+        i.crficon-cart{
+          display: inline;
+          position: relative;
+          font-size: 22px;
+          vertical-align: middle;
+          top: -3px;
+          margin-left: 3px;
+          .crficon-checked {
+            width: 12px;
+            height: 12px;
+            font-size: 5px;
+            left: 10px;
+            top: auto;
+            bottom: 12px;
+            &:before{
+              display: block;
+              position: absolute;
+              top: 3px;
+              left: 3px;
+            }
+          }
+        }
+      &.added{
+        opacity: 1;
+        background-color: #1e56c9;
+        .crficon-checked{
+          visibility: visible;
+        }
+        &:before{
+          content: "ADICIONADO";
+        }
+      }
+
+      } */
+}
+@media (max-width: 639px) {
+  .cmscomponent-carousel .carousel .item,
+  .cmscomponent-carousel .owl-carousel .item,
+  .cmscomponent-carousel .js-owl-carousel .item {
+    min-height: 400px;
+  }
+}
+@media (min-width: 640px) and (max-width: 767px) {
+  .cmscomponent-carousel .carousel .item,
+  .cmscomponent-carousel .owl-carousel .item,
+  .cmscomponent-carousel .js-owl-carousel .item {
+    min-height: 450px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .cmscomponent-carousel .carousel .item,
+  .cmscomponent-carousel .owl-carousel .item,
+  .cmscomponent-carousel .js-owl-carousel .item {
+    min-height: 400px;
+  }
+}
+@media (min-width: 992px) {
+  .cmscomponent-carousel .carousel .item,
+  .cmscomponent-carousel .owl-carousel .item,
+  .cmscomponent-carousel .js-owl-carousel .item {
+    min-height: 440px;
+  }
+}
+@media (min-width: 768px) {
+  .cmscomponent-carousel .carousel.no-pag,
+  .cmscomponent-carousel .owl-carousel.no-pag,
+  .cmscomponent-carousel .js-owl-carousel.no-pag {
+    min-height: 380px;
+  }
+  .cmscomponent-carousel .carousel.no-pag .owl-wrapper-outer,
+  .cmscomponent-carousel .owl-carousel.no-pag .owl-wrapper-outer,
+  .cmscomponent-carousel .js-owl-carousel.no-pag .owl-wrapper-outer {
+    min-height: 380px;
+  }
+}
+.cmscomponent-carousel .owl-controls {
+  -webkit-transition: opacity .5s linear .5s;
+  -moz-transition: opacity .5s linear .5s;
+  -ms-transition: opacity .5s linear .5s;
+  -o-transition: opacity .5s linear .5s;
+  transition: opacity .5s linear .5s;
+}
+.cmscomponent-carousel .side-text {
+  opacity: 0;
+  -webkit-transition: opacity .5s ease 0s;
+  -moz-transition: opacity .5s ease 0s;
+  -ms-transition: opacity .5s ease 0s;
+  -o-transition: opacity .5s ease 0s;
+  transition: opacity .5s ease 0s;
+  padding: 30px 50px 30px 30px;
+  background-color: #89a4cf;
+  color: white;
+}
+@media (min-width: 1024px) {
+  .cmscomponent-carousel .side-text {
+    min-height: 440px;
+  }
+}
+.cmscomponent-carousel .side-text * {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: white;
+}
+.cmscomponent-carousel .side-text h1,
+.cmscomponent-carousel .side-text h2,
+.cmscomponent-carousel .side-text h3,
+.cmscomponent-carousel .side-text h4,
+.cmscomponent-carousel .side-text h5,
+.cmscomponent-carousel .side-text h6 {
+  font-size: 30px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  padding-bottom: 10px;
+}
+.cmscomponent-carousel .side-text a {
+  text-decoration: none;
+}
+.cmscomponent-carousel .side-text a:hover {
+  text-decoration: none;
+}
+.cmscomponent-carousel .side-text .btn-more {
+  color: white;
+  border: 1.4px solid white;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.cmscomponent-carousel .side-text .arrow {
+  display: block;
+  position: absolute;
+  background-color: white;
+  width: 40px;
+  height: 100%;
+  top: 0;
+  right: -20px;
+}
+.cmscomponent-carousel .side-text .arrow:before {
+  display: block;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 0 7px 0px;
+  border-color: transparent transparent transparent #89a4cf;
+  content: "";
+  -webkit-transition: border 0.2s ease-out 0s;
+  -moz-transition: border 0.2s ease-out 0s;
+  -ms-transition: border 0.2s ease-out 0s;
+  -o-transition: border 0.2s ease-out 0s;
+  transition: border 0.2s ease-out 0s;
+}
+.cmscomponent-carousel .side-text.sh .arrow:before {
+  border-width: 7px 0 7px 7px;
+}
+.cmscomponent-carousel .side-text.sh.side-text {
+  opacity: 1;
+}
+@media all and (max-width: 1020px) {
+  .cmscomponent-carousel .side-text {
+    margin-bottom: 15px;
+    padding: 20px 20px 40px 20px;
+  }
+  .cmscomponent-carousel .side-text.sh .arrow:before {
+    border-width: 7px 7px 0px 7px;
+  }
+  .cmscomponent-carousel .side-text .arrow {
+    top: auto;
+    bottom: -40px;
+    left: 0;
+    padding: 30px;
+    right: auto;
+    width: 100%;
+    height: 40px;
+  }
+  .cmscomponent-carousel .side-text .arrow:before {
+    top: 0px;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 7px 7px 0px 7px;
+    border-color: #89a4cf transparent transparent transparent;
+  }
+}
+@media all and (max-width: 1020px) {
+  .cmscomponent-carousel .btn-more {
+    display: block;
+    position: relative;
+    margin: 20px 0 0 0;
+    width: 173px;
+  }
+  .cmscomponent-carousel.use-red .side-text {
+    background-color: #ed134d;
+  }
+  .cmscomponent-carousel.use-red .arrow:before {
+    border-color: #ed134d transparent transparent transparent;
+  }
+  .cmscomponent-carousel.use-yellow .side-text {
+    background-color: #fcb117;
+  }
+  .cmscomponent-carousel.use-yellow .arrow:before {
+    border-color: #fcb117 transparent transparent transparent;
+  }
+}
+@media all and (min-width: 1020px) {
+  .cmscomponent-carousel .btn-more {
+    display: block;
+    position: absolute;
+    margin: 0;
+    bottom: 30px;
+  }
+  .cmscomponent-carousel.use-red .side-text {
+    background-color: #ed134d;
+  }
+  .cmscomponent-carousel.use-red .arrow:before {
+    border-color: transparent transparent transparent #ed134d;
+  }
+  .cmscomponent-carousel.use-yellow .side-text {
+    background-color: #fcb117;
+  }
+  .cmscomponent-carousel.use-yellow .arrow:before {
+    border-color: transparent transparent transparent #fcb117;
+  }
+}
+@media all and (min-width: 640px) {
+  .cmscomponent-video.fs iframe {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media all and (max-width: 767px) {
+  .cmscomponent-video iframe {
+    height: 300px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .cmscomponent-video iframe {
+    height: 300px;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  .cmscomponent-video iframe {
+    height: 300px;
+  }
+}
+@media all and (min-width: 1200px) {
+  .cmscomponent-video iframe {
+    height: 400px;
+  }
+}
+.cmscomponent-titletext p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.cmscomponent-imagemenu p {
+  text-align: center;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+.cmscomponent-imagemenu .more-btn {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.cmscomponent-imagemenu .more-btn.loading {
+  position: relative;
+}
+.cmscomponent-imagemenu .more-btn.loading:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  background: inherit;
+  content: "Carregando...";
+}
+.cmscomponent-imagemenu .row ul {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+}
+.cmscomponent-imagemenu .row ul li {
+  float: none;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+.cmscomponent-imagemenu .row ul li a {
+  text-decoration: none;
+}
+.cmscomponent-imagemenu .row ul li .hld {
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+.cmscomponent-imagemenu .row ul li .hld .image.lz-ldng {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.carrefour.com.br/_ui/responsive/common/images/spinner.gif") no-repeat center center;
+}
+.cmscomponent-imagemenu .row ul li .hld .lbl {
+  display: block;
+  position: relative;
+  height: 47px;
+  font-size: 13px;
+  padding: 5px;
+  line-height: 30px;
+  word-break: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  margin: 0 15%;
+  border: 1px solid #e5e5e5;
+}
+.cmscomponent-imagemenu .row ul li .hld .lbl span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 13px;
+}
+.cmscomponent-imagemenu .row ul li .hld img {
+  width: 100%;
+  min-height: 200px;
+  padding: 2px;
+}
+.cmscomponent-imagemenu.cross .hld .lbl,
+.cmscomponent-imagemenu.contextual .hld .lbl {
+  bottom: 15px;
+  margin-bottom: -10px;
+}
+.cmscomponent-imagemenu.cross a:hover .hld img,
+.cmscomponent-imagemenu.contextual a:hover .hld img {
+  border: 2px solid #2edef8;
+  padding: 0;
+}
+.cmscomponent-imagemenu.simple ul .hld .lbl {
+  margin: 0;
+}
+.cmscomponent-imagemenu.simple ul a:hover .hld .lbl {
+  padding: 4px;
+  border: 2px solid #2edef8;
+}
+.cmscomponent-imagemenu.noborder a:hover .hld img {
+  padding: 2px;
+  border: 0;
+}
+.cmscomponent-imagemenu.historic ul li .hld {
+  height: 440px;
+  max-height: 440px;
+}
+.cmscomponent-imagemenu.historic ul li .hld .image {
+  display: block;
+  position: relative;
+  max-height: 440px;
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  -moz-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.cmscomponent-imagemenu.historic ul li .hld .image img {
+  position: relative;
+  padding: 0;
+  width: auto;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+.cmscomponent-imagemenu.historic ul li .hld .image .hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+.cmscomponent-imagemenu.historic ul li .hld .image .hover bdi.txt {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  height: 62px;
+  top: 50%;
+  margin-top: -21px;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: black;
+  -webkit-transition: margin-top 0.2s ease-in-out;
+  -moz-transition: margin-top 0.2s ease-in-out;
+  transition: margin-top 0.2s ease-in-out;
+}
+.cmscomponent-imagemenu.historic ul li .hld .image .hover bdi.txt bdi.more {
+  display: block;
+  position: relative;
+  font-weight: bold;
+  color: #EB005D;
+  bottom: -10px;
+  -webkit-transition: bottom 0.2s ease-in-out;
+  -moz-transition: bottom 0.2s ease-in-out;
+  transition: bottom 0.2s ease-in-out;
+}
+.cmscomponent-imagemenu.historic ul li .hld .image .hover bdi.txt bdi.more i {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out 0.1s;
+  -moz-transition: all 0.2s ease-in-out 0.1s;
+  transition: all 0.2s ease-in-out 0.1s;
+  transform: scale(0, 0);
+}
+.cmscomponent-imagemenu.historic ul li .historic-data {
+  display: block;
+  position: absolute;
+  top: 6%;
+  padding: 0 25px;
+  width: 100%;
+  height: 88%;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.cmscomponent-imagemenu.historic ul li .historic-data h3 {
+  display: block;
+  position: relative;
+  font-size: 20px;
+  text-align: left;
+  color: #fff;
+  margin: 20px 0 27px 0;
+  z-index: 1;
+}
+.cmscomponent-imagemenu.historic ul li .historic-data p {
+  display: block;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+  margin: 20px 0;
+  opacity: 0;
+  -webkit-transition: opacity .1s linear;
+  -moz-transition: opacity .1s linear;
+  transition: opacity .1s linear;
+}
+.cmscomponent-imagemenu.historic ul li .historic-data p .more {
+  display: none;
+  position: relative;
+  color: #EB005D;
+  font-size: 13px;
+  margin: 20px 0;
+}
+.cmscomponent-imagemenu.historic ul li .historic-data:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 28%;
+  top: 0;
+  left: 0;
+  background-color: #838383;
+  opacity: .6;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  content: "";
+}
+@media all and (max-width: 1023px) {
+  .cmscomponent-imagemenu.historic ul li .historic-data h3 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 10px 0 17px 0;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1219px) {
+  .cmscomponent-imagemenu.historic ul li .historic-data h3 {
+    font-size: 15px;
+    line-height: 1.2;
+    margin: 10px 0 17px 0;
+  }
+  .cmscomponent-imagemenu.historic ul li .historic-data p {
+    font-size: 14px;
+  }
+}
+@media all and (min-width: 1220px) and (max-width: 1365px) {
+  .cmscomponent-imagemenu.historic ul li .historic-data h3 {
+    font-size: 17px;
+    line-height: 1.2;
+    margin: 10px 0 17px 0;
+  }
+  .cmscomponent-imagemenu.historic ul li .historic-data p {
+    font-size: 14px;
+  }
+}
+@media all and (min-width: 1366px) {
+  .cmscomponent-imagemenu.historic ul li .historic-data h3 {
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 10px 0 17px 0;
+  }
+}
+.cmscomponent-imagemenu.historic ul li:hover .historic-data p {
+  opacity: 1;
+}
+.cmscomponent-imagemenu.historic ul li:hover .historic-data:before {
+  height: 100%;
+  left: 0;
+}
+.cmscomponent-productshowcase .products-holder {
+  padding: 0;
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.cmscomponent-productshowcase .more-btn {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.cmscomponent-productshowcase .more-btn.loading {
+  position: relative;
+}
+.cmscomponent-productshowcase .more-btn.loading:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  background: inherit;
+  content: "Carregando...";
+}
+@media all and (min-width: 1024px) {
+  .cmscomponent-productshowcase .products-holder {
+    margin-right: -11px;
+  }
+  .cmscomponent-productshowcase .grid ul li.product.col-md-3 {
+    width: 20%;
+  }
+}
+.cmscomponent-catchcontent .item {
+  padding: 20px 31px;
+  height: 180px;
+  margin-bottom: 10px;
+}
+.cmscomponent-catchcontent .item--red {
+  background-color: #ff1654;
+}
+.cmscomponent-catchcontent .item--red .item__desc {
+  color: #860d2d;
+}
+.cmscomponent-catchcontent .item--red .item__btn:hover:before {
+  background-color: #860d2d;
+  border-color: #860d2d;
+}
+.cmscomponent-catchcontent .item--blue {
+  background-color: #2edef8;
+}
+.cmscomponent-catchcontent .item--blue .item__desc {
+  color: #0b7686;
+}
+.cmscomponent-catchcontent .item--blue .item__btn:hover:before {
+  background-color: #0b7686;
+  border-color: #0b7686;
+}
+.cmscomponent-catchcontent .item--orange {
+  background-color: #fcb116;
+}
+.cmscomponent-catchcontent .item--orange .item__desc {
+  color: #805a0b;
+}
+.cmscomponent-catchcontent .item--orange .item__btn:hover:before {
+  background-color: #805a0b;
+  border-color: #805a0b;
+}
+.cmscomponent-catchcontent .item--pink {
+  background-color: #ff5f89;
+}
+.cmscomponent-catchcontent .item--pink .item__desc {
+  color: #9a3751;
+}
+.cmscomponent-catchcontent .item--pink .item__btn:hover:before {
+  background-color: #9a3751;
+  border-color: #9a3751;
+}
+.cmscomponent-catchcontent .item--green {
+  background-color: #aaf254;
+}
+.cmscomponent-catchcontent .item--green .item__desc {
+  color: #518016;
+}
+.cmscomponent-catchcontent .item--green .item__btn:hover:before {
+  background-color: #518016;
+  border-color: #518016;
+}
+.cmscomponent-catchcontent .item--yellow {
+  background-color: #ffce22;
+}
+.cmscomponent-catchcontent .item--yellow .item__desc {
+  color: #876d14;
+}
+.cmscomponent-catchcontent .item--yellow .item__btn:hover:before {
+  background-color: #876d14;
+  border-color: #876d14;
+}
+.cmscomponent-catchcontent .item--magenta {
+  background-color: #e1509b;
+}
+.cmscomponent-catchcontent .item--magenta .item__desc {
+  color: #8b2e5e;
+}
+.cmscomponent-catchcontent .item--magenta .item__btn:hover:before {
+  background-color: #8b2e5e;
+  border-color: #8b2e5e;
+}
+.cmscomponent-catchcontent .item--lightgreen {
+  background-color: #50e198;
+}
+.cmscomponent-catchcontent .item--lightgreen .item__desc {
+  color: #318c5e;
+}
+.cmscomponent-catchcontent .item--lightgreen .item__btn:hover:before {
+  background-color: #318c5e;
+  border-color: #318c5e;
+}
+.cmscomponent-catchcontent .item--gold {
+  background-color: #ffc600;
+}
+.cmscomponent-catchcontent .item--gold .item__desc {
+  color: #987702;
+}
+.cmscomponent-catchcontent .item--gold .item__btn:hover:before {
+  background-color: #987702;
+  border-color: #987702;
+}
+.cmscomponent-catchcontent .item--lightblue {
+  background-color: #78c0f9;
+}
+.cmscomponent-catchcontent .item--lightblue .item__desc {
+  color: #4a7da6;
+}
+.cmscomponent-catchcontent .item--lightblue .item__btn:hover:before {
+  background-color: #4a7da6;
+  border-color: #4a7da6;
+}
+.cmscomponent-catchcontent .item--lightyellow {
+  background-color: #fcd541;
+}
+.cmscomponent-catchcontent .item--lightyellow .item__desc {
+  color: #a38926;
+}
+.cmscomponent-catchcontent .item--lightyellow .item__btn:hover:before {
+  background-color: #a38926;
+  border-color: #a38926;
+}
+.cmscomponent-catchcontent .item--lightred {
+  background-color: #ef5b5b;
+}
+.cmscomponent-catchcontent .item--lightred .item__desc {
+  color: #a93737;
+}
+.cmscomponent-catchcontent .item--lightred .item__btn:hover:before {
+  background-color: #a93737;
+  border-color: #a93737;
+}
+.cmscomponent-catchcontent .item p {
+  display: block;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  font-weight: bold;
+}
+.cmscomponent-catchcontent .item__title {
+  display: block;
+  position: relative;
+  color: #fff;
+  height: 50px;
+  font-size: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.cmscomponent-catchcontent .item__desc {
+  display: block;
+  position: relative;
+  color: #fff;
+  height: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.cmscomponent-catchcontent .item__icon {
+  display: block;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 20px;
+  right: 31px;
+  z-index: 0;
+}
+.cmscomponent-catchcontent .item__btn {
+  display: block;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 5px 30px;
+  bottom: 28px;
+  left: 42px;
+}
+.cmscomponent-catchcontent .item__btn span {
+  color: #fff;
+}
+.cmscomponent-catchcontent .item__btn:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 27px;
+  border: 2px solid #fff;
+  -webkit-transition: border 0.3s ease-out;
+  -moz-transition: border 0.3s ease-out;
+  transition: all 0.1s ease-out;
+  content: "";
+}
+.cmscomponent-catchcontent .item__btn:hover span {
+  display: block;
+  position: relative;
+  font-weight: bold;
+}
+.cmscomponent-catchcontent .item__btn:hover:before {
+  width: 105%;
+  height: 30px;
+  margin-left: -3%;
+  top: -2px;
+}
+@media all and (max-width: 1280px) {
+  .cmscomponent-catchcontent .item {
+    height: 160px;
+    padding: 15px;
+  }
+  .cmscomponent-catchcontent .item__title {
+    height: 36px;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .cmscomponent-catchcontent .item__desc {
+    height: 36px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cmscomponent-catchcontent .item__icon {
+    width: 100px;
+    height: 100px;
+    top: 30px;
+    right: 15px;
+  }
+  .cmscomponent-catchcontent .item__btn {
+    padding: 5px 15px;
+    left: 28px;
+    bottom: 25px;
+  }
+  .cmscomponent-catchcontent .item__btn span {
+    font-size: 12px;
+  }
+}

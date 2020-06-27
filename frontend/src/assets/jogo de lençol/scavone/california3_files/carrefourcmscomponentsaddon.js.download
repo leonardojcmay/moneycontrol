@@ -1,0 +1,237 @@
+/* -- Functions related to service functionality -- */
+enableServiceFunctionality();
+
+function enableServiceFunctionality() {
+
+	var selectedServices = new ServicesMap();
+	var selectedServicesName = new ServicesMap();
+	var selectedServicesValue = new ServicesMap();
+
+	var defaultPrice = $("#formattedCartValue").val();
+
+	var formatReal = function(int) {
+        var tmp = int+'';
+        tmp = tmp.replace(/([0-9]{2})$/g, ",$1");
+        if( tmp.length > 6 )
+                tmp = tmp.replace(/([0-9]{3}),([0-9]{2}$)/g, ".$1,$2");
+
+        return tmp;
+	}
+
+	var checkService = function(radio) {
+		jQuery('.result ul li').not('li.product-name, li.total, li.product-price, li.total-price').remove();
+		jQuery.each(selectedServicesName.values(), function(index, val) {
+		  var serviceName = val +" "+ $("#productQuantity").val() +"x";
+      jQuery('.serviceName ul li.product-name').after('<li>' + serviceName + '</li>');
+			jQuery('.servicePrice ul li.product-price').after('<li>' + selectedServicesValue.values()[index] + '</li>');
+		});
+        console.log(selectedServicesValue.values()[0], selectedServicesValue.values());
+        if(selectedServicesValue.values()[0] != undefined) {
+            jQuery('.servicePrice .total-price strong').text("R$ " + formatReal(calculateCart(selectedServicesValue.values())));
+        }
+
+	}
+
+	var getRadioName = function(radio) {
+
+		return $(radio).attr("name");
+
+	};
+
+	var getRadioValue = function(radio) {
+
+		return $(radio).attr("value");
+
+	};
+
+	var getRadioServicePrice = function(radio) {
+
+		return $(radio).attr("data-price");
+
+	};
+
+	var getRadioServiceName = function(radio) {
+
+		return $(radio).attr("data-name");
+
+	};
+
+	var addToMap = function(radio) {
+		selectedServices.put(getRadioName(radio),getRadioValue(radio));
+		selectedServicesName.put(getRadioName(radio),getRadioServiceName(radio));
+		selectedServicesValue.put(getRadioName(radio),getRadioServicePrice(radio));
+		checkService();
+	};
+
+	var removeFromMap = function(radio) {
+  		selectedServices.remove(getRadioName(radio),getRadioValue(radio));
+  		selectedServicesName.remove(getRadioName(radio),getRadioServiceName(radio));
+  		selectedServicesValue.remove(getRadioName(radio),getRadioServicePrice(radio));
+  		checkService();
+  		subtractFromCalculateCart(getRadioServicePrice(radio));
+      jQuery('.servicePrice .total-price strong').text("R$ " + formatReal(calculateCart(selectedServicesValue.values())));
+  	};
+
+    var containsElement = function(radio) {
+
+      return selectedServices.contains(getRadioName(radio));
+
+    };
+
+    var enableDisableRadioButton = function() {
+
+      $('[name*=insurance]').on("click", function(){
+          if ($(this).is(':checked') && containsElement(this)) {
+            $(this).prop('checked', false);
+            removeFromMap(this);
+          } else {
+            addToMap(this);
+          }
+      });
+
+      $('[name*=installation]').on("click", function(){
+          if ($(this).is(':checked') && containsElement(this)) {
+            $(this).prop('checked', false);
+            removeFromMap(this);
+          } else {
+            addToMap(this);
+          }
+      });
+
+      $('[name*=serviceOTHER]').on("click", function(){
+          if ($(this).is(':checked') && containsElement(this)) {
+            $(this).prop('checked', false);
+            removeFromMap(this);
+          } else {
+            addToMap(this);
+          }
+      });
+
+      $('[name*=warranty]').on("click", function(){
+          if ($(this).is(':checked') && containsElement(this)) {
+            $(this).prop('checked', false);
+            removeFromMap(this);
+          } else {
+            addToMap(this);
+          }
+      });
+
+    };
+
+    var getAllRadionChecked = function() {
+
+      $(document).ready(function() {
+        $('input:radio:checked').each(function(){
+            selectedServices.put(getRadioName(this),getRadioValue(this));
+            selectedServicesName.put(getRadioName(this),getRadioServiceName(this));
+            selectedServicesValue.put(getRadioName(this),getRadioServicePrice(this));
+        });
+      });
+
+    };
+
+    var enableAddTocCartButton = function() {
+
+    	$("#addServices").click(function(){
+    		addToCart(selectedServices.values());
+    	});
+
+    };
+
+    enableAddTocCartButton();
+    enableDisableRadioButton();
+    getAllRadionChecked();
+}
+
+function ServicesMap() {
+    this.keys = new Array();
+    this.data = {};
+
+    this.put = function (key, value) {
+    	if (key != undefined && key != 'undefined') {
+
+        if (this.data[key] == null) {
+          this.keys.push(key);
+        }
+        this.data[key] = value;
+      }
+    };
+
+    this.contains = function (key) {
+      if (this.data[key] == null) {
+        return false;
+      }
+      return true;
+    };
+
+    this.get = function (key) {
+        return this.data[key];
+    };
+
+    this.remove = function(key) {
+        for(var i = this.keys.length; i--;) {
+            if(this.keys[i] === key) {
+                this.keys.splice(i, 1);
+                this.data[key] = null;
+            }
+        }
+    }
+
+    this.each = function (fn) {
+        if (typeof fn != 'function') {
+            return;
+        }
+        var len = this.keys.length;
+        for (var i = 0; i < len; i++) {
+            var k = this.keys[i];
+            fn(k, this.data[k], i);
+        }
+    };
+
+    this.values = function () {
+		  var len = this.keys.length;
+		  var entrys = new Array(len);
+      for (var i = 0; i < len; i++) {
+        entrys[i] = this.data[this.keys[i]];
+      }
+		  return entrys;
+	  };
+
+    this.isEmpty = function () {
+        return this.keys.length == 0;
+    };
+
+    this.size = function () {
+        return this.keys.length;
+    };
+}
+
+
+function calculateCart(totalDefaultPrice) {
+
+	var totalPrice = parseInt(jQuery('.servicePrice .product-price strong').text().replace("R$","").replace(",","").replace(".","").replace(" ",""));
+  if(totalDefaultPrice.length > 0) {
+  	for (var i=0; i < totalDefaultPrice.length; i++) {
+  		totalPrice = parseInt(totalPrice) + parseInt(totalDefaultPrice[i].trim().replace("R$","").replace(",","").replace(".","").replace(" ",""));
+  	}
+  }
+
+	return totalPrice;
+
+};
+
+function subtractFromCalculateCart(totalDefaultPrice) {
+
+	var totalPrice = parseInt(jQuery('.servicePrice .product-price strong').text().replace("R$","").replace(",","").replace(".","").replace(" ",""));
+
+	totalPrice = parseInt(totalPrice) - parseInt(totalDefaultPrice.trim().replace("R$","").replace(",","").replace(".","").replace(" ",""));
+
+	return totalPrice;
+
+};
+
+function addToCart(services) {
+
+	$('input[name="services"]').attr("value",services.toString());
+
+}

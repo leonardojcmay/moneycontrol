@@ -1,0 +1,1583 @@
+/* ATUALIZADO 26/06/2020  - VERSÃO 81 - 13:25 */
+/*BG FILETE HEADER MERCADO */
+
+
+@charset "UTF-8";
+
+
+/*AJUSTAR FILETE ACIMA DO HEADER*/
+.header-filete.header-filete--homepage.filete-informativo {
+    display: block;
+    background: linear-gradient(45deg, #F40D0C 70%, #B40D0C 30%);
+    cursor: pointer;
+}
+.page-homepage .header-filete.header-filete--homepage.filete-informativo
+/*.page-subhome-mercado .header-filete.header-filete--homepage.filete-informativo*/
+{
+    display: none;
+}
+.page-homepage .header-filete.header-filete--homepage.filete-informativo.homepage {
+    display: block;
+}
+
+/*AJUSTAR FILETE ABAIXO DO HEADER*/
+
+.header-filete--mercado {
+    /*background: linear-gradient(45deg, #DF0D0D 70%, #DF0D0D 30%);*/
+}
+
+.header-filete .wrapper {
+    width: 100%;
+    max-width: 1326px;
+    margin: 0 auto;
+}
+
+.header-filete img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.header-filete .header-filete-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header-filete .header-filete-desktop {
+        display: none;
+    }
+    .header-filete .header-filete-mobile {
+        display: block;
+    }
+}
+
+
+/* AJUSTAR MODAL CASHBACK */
+
+.header-filete--has-modal {
+    cursor: pointer;
+}
+
+.header-filete-modal {
+    background: #fff;
+    cursor: default;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    width: calc(100% - 80px);
+    box-shadow: 0px 0px 7px #999;
+    transform: scale(0);
+}
+
+.header-filete-modal--wrapper {
+    padding: 20px 20px 15px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.header-filete-modal--close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header-filete-modal--close:before,
+.header-filete-modal--close:after {
+    content: "";
+    height: 20px;
+    width: 2px;
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    left: 9px;
+}
+
+.header-filete-modal--close:before {
+    transform: rotate(45deg);
+}
+
+.header-filete-modal--close:after {
+    transform: rotate(-45deg);
+}
+
+.header-filete-modal--text {
+    color: #333;
+    font-size: 13px;
+    margin-bottom: 7px;
+    text-align: justify;
+}
+
+.header-filete-modal--title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.header-filete-modal--text-wrapper {
+    height: 300px;
+    padding-right: 20px;
+    overflow-y: scroll;
+}
+
+.header-filete-modal.is--hidden {
+    transform: scale(0) translate(-50%, -50%);
+    opacity: 0;
+    z-index: -1;
+    animation: hide 0.25s;
+}
+
+.header-filete-modal.is--show {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+    z-index: 9999;
+    animation: show 0.25s;
+}
+
+@keyframes show {
+    from {
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
+        z-index: -1;
+    }
+    to {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+        z-index: 9999;
+    }
+}
+
+@keyframes hide {
+    from {
+        transform: scale(1) translate(-50%, -50%);
+        opacity: 1;
+        z-index: 9999;
+    }
+    to {
+        transform: scale(0) translate(-50%, -50%);
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .header-filete-modal--text {
+        text-align: left;
+    }
+}
+
+
+/*AJUSTAR MENU*/
+
+.container-product-info {
+    z-index: 10;
+}
+
+header {
+    max-width: unset;
+    background: #fff;
+    z-index: 13;
+}
+
+.header-1,
+.responsive-menu {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(https://static.carrefour.com.br/imagens/site/2019/Fontes/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(https://static.carrefour.com.br/imagens/site/2019/Fontes/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(https://static.carrefour.com.br/imagens/site/2019/Fontes/Ubuntu-Bold.ttf);
+}
+
+.no-food-login {
+    display: none;
+}
+
+a.logout.no-food-login__link {
+    display: none;
+}
+
+@media (min-width:1025px) {
+    .overlay-no-food {
+        background: unset;
+    }
+    body.page-homepage.pageType-ContentPage.template-pages-layout-subhomeLayout1Page.pageLabel-homepage.language-pt header {
+        margin-bottom: 0;
+    }
+    .header-1,
+    .responsive-menu {
+        display: block;
+    }
+    .responsive-menu-mobile {
+        display: none
+    }
+    .wrapper {
+        width: 1326px;
+        display: block;
+        margin: 0 auto;
+        max-width: unset;
+    }
+    /*Header-1 novo html*/
+    .header-1 {
+        background: #fff;
+    }
+    .header-info-1 {
+        padding-top: 10px;
+        width: 51.4%;
+        margin: 0 auto -3px;
+        font-family: 'Ubuntu-Regular';
+    }
+    .header-info-1 li {
+        display: inline-block;
+        height: 24px;
+        margin-right: 9%;
+    }
+    .header-info-1 li:last-child {
+        margin-right: 0;
+    }
+    .header-info-1 li ul {
+        display: none;
+        position: absolute;
+        width: 154px;
+        flex-direction: column;
+        margin: 5px 0px 0px -20px;
+        z-index: 102;
+        padding: 15px 10px;
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #2E8CF6;
+        box-sizing: border-box;
+        /* blue-hover */
+        box-shadow: 0px 0px 10px rgba(30, 91, 198, 0.3);
+    }
+    .header-info-1 span,
+    .header-info-1 a {
+        font-size: 12px;
+        font-family: 'Ubuntu-Regular';
+        color: #333;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .header-info-1 span:before,
+    .header-info-1 a:before {
+        content: "";
+        display: block;
+        position: relative;
+        top: 0px;
+        float: left;
+        margin-right: 10px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .nossas-lojas span:hover:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/pin-hover-icon.svg);
+    }
+    .header-info-1 span:hover,
+    .header-info-1 a:hover {
+        color: #2E8CF6;
+    }
+    .nossas-lojas:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/pin-icon_v2.svg);
+        width: 11px;
+        height: 15px;
+    }
+    .nossas-lojas span:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/pin-icon_v2.svg);
+        width: 11px;
+        height: 15px;
+    }
+    .atendimento a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/atendimento-icon_v2.svg);
+        width: 15px;
+        height: 15px;
+    }
+    .atendimento a:hover:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/atendimento-hover-icon.svg);
+    }
+    .cartao-carrefour a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cartao-icon_v2.svg);
+        width: 16px;
+        height: 13px;
+        top: 2px;
+    }
+    .cartao-carrefour a:hover:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cartao-hover-icon.svg);
+    }
+    .seja-parceiro a:before {
+        content: ' + ';
+        border: 1px solid;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        line-height: 12px;
+        top: 1px;
+        padding: 0px 3px 1px 3px;
+    }
+    .header-info-1 li span:hover ul {
+        display: block;
+    }
+    li.nossas-lojas:hover ul {
+        display: flex;
+    }
+    .header-info-1 li ul li {
+        margin-bottom: 10px;
+    }
+    .header-info-1 li ul li:last-child {
+        margin-bottom: 0;
+    }
+    .header-info-1 li ul li a {
+        font-size: 14px;
+    }
+    /* desabilitando componentes do header antigo */
+    .no-food-menu {
+        display: none;
+    }
+    .no-food-login {
+        display: none;
+    }
+    .js-toggle-sub-menu-stores {
+        display: none;
+    }
+    .no-food-attendance {
+        display: none;
+    }
+    /* estilizando componentes do header antigo*/
+    .row.header-no-food {
+        padding: 10px 0 20px 0;
+        margin: 0 auto;
+        width: 1326px;
+    }
+    /*Logo*/
+    .no-food-logo {
+        border: 0;
+    }
+    .simple-banner-component img.fix-logo-header {
+        max-width: 192px !important;
+    }
+    .text-center.no-food-logo a img {
+        max-width: 192px !important;
+    }
+    @media (min-width: 1200px) {
+        .header-no-food .no-food-logo {
+            margin: 0 2.6% 0 3.8%;
+            width: 226px !important;
+            padding: 3px 0;
+        }
+    }
+    /*barra de busca*/
+    .no-food-search .site-search,
+    .no-food-search .site-search button {
+        background: #f1f1f1;
+        border-radius: 5px;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .no-food-search .site-search:hover,
+    .no-food-search .site-search button:hover {
+        background: #f1f1f1;
+    }
+    .no-food-search {
+        border-radius: 5px;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    #js-site-search-input {
+        margin-bottom: 0;
+    }
+    .site-search {
+        height: 46px;
+    }
+    div#block-search-mobile-add form {
+        font-size: 14px;
+        color: #1852cc;
+    }
+    .no-food-search:hover {
+        border: 1px solid #2E8CF6;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .no-food-search.overlay-open {
+        border-color: #FF403F;
+    }
+    .no-food-search__button {
+        padding: 13px 0px;
+        width: 6%;
+    }
+    .no-food-search__button::before {
+        content: "";
+        display: block;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/search-icon.svg);
+        width: 20px;
+        height: 20px;
+        margin: 0 auto;
+    }
+    .no-food-search__input {
+        width: 94%;
+        padding: 15px 20px 15px 10px;
+        min-height: 38px;
+    }
+    @media (min-width: 1200px) {
+        .no-food-search {
+            background: #fff;
+            width: 624px !important;
+            margin-right: 4.5%;
+            min-height: 48px;
+            max-height: 48px;
+        }
+        .site-search {
+            height: 46px;
+        }
+    }
+    /*LOGIN*/
+    .no-food-login {
+        border: none;
+        width: 170px;
+        color: #333;
+        font-family: 'Ubuntu-Regular';
+        font-size: 13px;
+        line-height: 14px;
+        padding: 7px 0;
+        text-transform: none;
+        margin-right: 1.5%;
+        display: block;
+    }
+    .no-food-login:before {
+        content: "";
+        display: block;
+        width: 26px;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/login-icon.svg);
+        height: 28px;
+        float: left;
+        border: none;
+        position: unset;
+    }
+    .no-food-login:hover:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/etc/header-site/codes/icons/user-icon-hover.svg);
+        height: 30px;
+        position: relative;
+        top: -1.5px;
+    }
+    .no-food-login:active:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/etc/header-site/codes/icons/user-icon-active.svg);
+    }
+    .logged-in .no-food-login:hover ul {
+        display: block !important;
+    }
+    body.logged-in .name-header,
+    body.logged-in .favorite-is-logged {
+        display: block;
+        color: #1E5BC6;
+        font-family: 'Ubuntu-Bold';
+        font-size: 13px;
+        text-align: left;
+        height: auto;
+        margin-left: 30px;
+    }
+    body.page-template-busca.logged-in .login.text-center.no-food-login.js-no-food-login.name-header:before {
+        content: "";
+    }
+    body.logged-in .name-header:before,
+    body.logged-in .favorite-is-logged:before {
+        content: "Olá,";
+        display: block;
+        font-family: 'Ubuntu-Regular';
+        color: #333;
+    }
+    body.not-logged-in .no-food-login__no-login:before,
+    body.not-logged-in .favorite-not-logged:before {
+        content: 'Olá, seja bem vindo!';
+        display: block;
+    }
+    .no-food-login:hover a.no-food-login__no-login {
+        text-decoration: none;
+    }
+    body.logged-in .name-header:after {
+        content: "";
+        width: 170px;
+        display: block;
+        background: transparent;
+        height: 50px;
+        position: absolute;
+        left: -13px;
+    }
+    span.no-food-login__enter {
+        text-transform: none;
+        color: #333;
+    }
+    .no-food-login:hover a.no-food-login__no-login span.no-food-login__enter {
+        color: #2E8CF6;
+    }
+    .no-food-login:active a.no-food-login__no-login span.no-food-login__enter {
+        color: #02296D;
+    }
+    .svg-header {
+        display: none;
+    }
+    .no-food-login__dropdow {
+        background: #FFFFFF;
+        top: 50px;
+        left: -10px;
+        border: 1px solid #2E8CF6;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 10px rgba(30, 91, 198, 0.3);
+        border-radius: 5px;
+    }
+    .no-food-login__link {
+        border: 0;
+        color: #333;
+        font-size: 14px;
+        font-family: 'Ubuntu-Regular';
+        text-decoration: none;
+    }
+    a.no-food-login__link {
+        text-decoration: none;
+    }
+    .no-food-login__link:hover {
+        color: #1852cc;
+    }
+    a.logout.no-food-login__link.desk-new {
+        display: block;
+    }
+    /*CARRINHO*/
+    .crficon-cart:before {
+        content: "";
+    }
+    .no-food-cart__icon::before {
+        content: "";
+        width: 31px;
+        height: 32px;
+        display: block;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cart-icon_v2.svg);
+    }
+    .no-food-cart__icon:hover:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cart-hover-icon.svg);
+    }
+    .no-food-cart__icon:active:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cart-active-icon.svg);
+    }
+    .no-food-cart {
+        border: 0;
+        padding: 0;
+        width: 4%;
+    }
+    .no-food-cart__count {
+        width: 14px;
+        height: 14px;
+        background: #40AA60;
+        left: 24px;
+        font-family: 'Ubuntu-Regular';
+        font-size: 10px;
+        line-height: 13px;
+    }
+    /*NOVO MENU*/
+    .responsive-menu {
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    }
+    .page-homepage.pageType-ContentPage.template-pages-layout-subhomeLayout1Page.pageLabel-homepage .responsive-menu {
+        margin: 0;
+    }
+    .menu-desktop {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        background: #fff;
+    }
+    .navigations ul {
+        display: none;
+        padding: 0;
+    }
+    .menu-title,
+    .menu-title span {
+        color: #333333;
+        font-family: 'Ubuntu-Regular';
+        font-size: 15px;
+        display: inline-flex;
+        line-height: 50px;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .menu-departamentos-desktop .menu-title:before,
+    .menu-mercado-desktop .menu-title:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 15px 10px 0 0;
+        float: left;
+    }
+    .menu-departamentos-desktop .menu-title {
+        width: 173px;
+    }
+    .menu-mercado-desktop.navigations .menu-title {
+        width: 122px;
+    }
+    .menu-mercado-desktop .nivel-2 li a,
+    .menu-mercado-desktop .nivel-2 li:hover a {
+        color: #333;
+    }
+    .menu-departamentos-desktop .menu-title:before {
+        background-image: url('https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/depet-icon.svg')
+    }
+    .menu-mercado-desktop .menu-title:before {
+        background-image: url('https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/mercado-icon.svg')
+    }
+    .menu-departamentos-desktop {
+        margin-left: 4%;
+    }
+    .menu-categorias-desktop {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-categorias-desktop .menu-title {
+        padding: 0 15px;
+    }
+    .menu-categorias-desktop .menu-title:first-child {
+        padding-left: 19px;
+    }
+    .menu-categorias-desktop li a:hover {
+        color: #2e8cf6;
+    }
+    .menu-categorias-desktop li a:active {
+        color: #02296D;
+    }
+    .menu-categorias-desktop .menu-title:active {
+        border-bottom: 2px solid #02296D;
+    }
+    .menu-departamentos-desktop .menu-title,
+    .menu-mercado-desktop .menu-title {
+        padding: 0 15px;
+    }
+    .menu-mercado-desktop ul.nivel-1 li ul.nivel-2 li a {
+        font-size: 14px;
+        color: #666;
+        display: block;
+        width: 255px;
+        line-height: 19px;
+        pointer-events: all;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .menu-mercado-desktop ul.nivel-1 li ul.nivel-2 li a:hover {
+        color: #2E8CF6;
+        text-decoration: underline;
+    }
+    .navigations {
+        position: relative;
+    }
+    .navigations li {
+        cursor: pointer;
+    }
+    .navigations li a {
+        text-decoration: none;
+    }
+    .menu-categorias-desktop .menu-title:hover {
+        color: #2E8CF6;
+        border-bottom: 2px solid;
+    }
+    .navigations ul.nivel-1 li {
+        width: 213px;
+        padding: 13px 9px;
+        border-bottom: 1px solid #CCCCCC;
+        line-height: 16px;
+        cursor: default;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .navigations li:hover ul.nivel-1 {
+        display: block;
+    }
+    .nivel-1 {
+        position: absolute;
+        background: #fff;
+        top: 159px;
+        padding: 0;
+        margin: 0 0px 0 -15px;
+        border: 1px solid #ccc;
+        top: 50px;
+        z-index: 999;
+    }
+    .navigations ul.nivel-1 li a {
+        text-decoration: none;
+        pointer-events: none;
+    }
+    .navigations ul.nivel-1 li a:after {
+        content: "";
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/arrow-menu-icon.svg);
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: right;
+        position: relative;
+        top: 5px;
+    }
+    .menu-departamentos-desktop li.menu-title:hover {
+        background: #1E5BC6;
+    }
+    .menu-departamentos-desktop li:hover span {
+        color: #fff;
+        font-family: 'Ubuntu-bold';
+    }
+    .menu-departamentos-desktop li span {
+        color: #1e5bc6;
+        font-family: 'Ubuntu-bold';
+    }
+    .menu-mercado-desktop li.menu-title span a {
+        font-family: 'Ubuntu-Bold';
+        color: #e81e26;
+    }
+    .menu-departamentos-desktop .menu-title:hover:before {
+        background-image: url('https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/depet-hover-icon.svg');
+    }
+    /*SHOW DA BLACK*/
+    .menu-title.show-da-black-friday-menu a {
+        color: #440044;
+        font-weight: bold;
+    }
+    .menu-title.show-da-black-friday-menu a:hover {
+        color: #ffff;
+    }
+    .menu-title.show-da-black-friday-menu:hover {
+        background: #440044;
+        border: 0;
+    }
+    .navigations ul.nivel-1 li:hover,
+    .navigations ul.nivel-1 li:hover a {
+        background: #F2F2F2;
+        color: #02296D;
+    }
+    .navigations ul.nivel-1 li:hover .nivel-2 {
+        display: block;
+    }
+    .nivel-2 {
+        position: absolute;
+        background: #f2f2f2;
+        top: -1px;
+        left: 214px;
+        width: 903px;
+        border: 1px solid #ccc;
+    }
+    .navigations ul.nivel-2 li {
+        border: none;
+        display: block;
+        float: left;
+        width: 294px;
+        padding: 20px 20px 20px;
+    }
+    .navigations ul.nivel-2 li:hover,
+    .navigations ul.nivel-2 li:hover a {
+        background: none;
+        color: none;
+    }
+    .navigations ul.nivel-2 li .nivel-3 a {
+        background: none;
+    }
+    .navigations ul.nivel-1 li .nivel-2 a {
+        background: none;
+    }
+    .navigations ul.nivel-1 li .nivel-2 a:after {
+        display: none;
+    }
+    .navigations ul.nivel-2 li ul.nivel-3 {
+        display: block;
+        height: 233px;
+        width: 245px;
+        margin: 0;
+        padding: 0;
+    }
+    .navigations ul.nivel-2 li ul.nivel-3 li {
+        /* width: 255px; */
+        padding: 0 0px 10px;
+    }
+    .navigations ul.nivel-2 li ul.nivel-3 li a {
+        font-size: 14px;
+        color: #666;
+        display: block;
+        width: 255px;
+        line-height: 19px;
+        pointer-events: all;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .navigations ul.nivel-2 li ul.nivel-3 li.first a {
+        font-size: 16px;
+        font-family: 'Ubuntu-Bold';
+    }
+    .navigations ul.nivel-2 li ul.nivel-3 li a:hover {
+        color: #2E8CF6;
+        text-decoration: underline;
+    }
+    .navigations ul.nivel-2 li ul.nivel-3 li.first a:hover {
+        color: #666;
+        text-decoration: none;
+        cursor: default;
+    }
+    /*ajuste de determinadas categorias*/
+    .navigations ul.nivel-1 li.tecnologia-e-eletronicos ul.nivel-3 {
+
+    }
+    /**/
+    .menu-mercado-desktop li.menu-title:hover {
+        background: #E81E26;
+    }
+    .menu-mercado-desktop .menu-title:hover:before {
+        background-image: url('https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/mercado-hover-icon.svg');
+    }
+    .menu-mercado-desktop li.menu-title:hover span a {
+        color: #fff;
+        font-family: 'Ubuntu-Bold';
+    }
+    .menu-mercado-desktop .nivel-2 {
+        width: 295px;
+    }
+    .menu-mercado-desktop ul.nivel-2 li {
+        padding: 12px 20px;
+    }
+    .menu-mercado-desktop .act-for-food ul.nivel-2 {
+        width: 613px;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .categoria-titulo {
+        padding: 20px 20px 0;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .categoria-titulo a {
+        color: #333;
+        font-weight: bold;
+        pointer-events: all;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .categoria-titulo a:hover {
+        text-decoration: underline;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .categoria-titulo a:hover {
+        color: #2E8CF6;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .categoria-titulo a:active {
+        color: #02296D;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .termos-mais-buscados {
+        display: inline-block;
+        padding: 20px 20px;
+        flex-direction: row;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .termos-mais-buscados .titulo-termos {
+        display: inline;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .termos-mais-buscados .titulo-termos b,
+    .navigations ul.nivel-1 li ul.nivel-2 .termos-mais-buscados a {
+        color: #333;
+        pointer-events: all;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .termos-mais-buscados a:hover {
+        text-decoration: underline;
+        color: #2E8CF6;
+    }
+    .navigations ul.nivel-1 li ul.nivel-2 .termos-mais-buscados a:active {
+        color: #02296D;
+    }
+    li.menu-title.ofertas-da-tv-menu a,
+    .ofertas-de-tv-menu-mobile a,
+    li.menu-title.ofertas-sinal-verde-menu,
+    .ofertas-sinal-verde-menu-mobile a {
+        font-weight: 600;
+    }
+
+    .menu-title.dia-dos-namorados-menu a {
+        color: #20000f;
+        font-weight: bold;
+
+    }
+
+
+
+    /*BANNERS MENU DESK*/
+
+    .navigations ul.nivel-1 li:hover .banner--menu--desk {
+        display: block;
+        position: absolute;
+        left: 508px;
+        top: -1px;
+        width: 299px;
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+    }
+
+    .navigations ul.nivel-1 li.banner--menu--img {
+        width: auto;
+    }
+
+    .navigations ul.nivel-1 li.banner--menu--img a {
+        pointer-events: unset;
+    }    
+
+
+    .navigations ul.nivel-1 li:hover .banner--menu--desk.bnm--alimentos,
+    .navigations ul.nivel-1 li:hover .banner--menu--desk.bnm--bebidas,
+    .navigations ul.nivel-1 li:hover .banner--menu--desk.bnm--refrigerados,
+    .navigations ul.nivel-1 li:hover .banner--menu--desk.bnm--matinais,
+    .navigations ul.nivel-1 li:hover .banner--menu--desk.bnm--saudaveis {
+        display: none;
+    }
+
+
+    .navigations ul.nivel-1 li .banner--menu--desk a:after {
+        display: none;
+    }
+
+
+  
+}
+
+
+/*tablet-mobile*/
+
+@media (max-width: 1024px) {
+    /**/
+    a.logout.no-food-login__link.desk-new {
+        display: none;
+    }
+    .menu-active body {
+        height: 850px;
+    }
+    header {
+        margin: 0;
+    }
+    .responsive-menu-mobile {
+        position: relative;
+        z-index: 25;
+        display: block;
+        -webkit-overflow-scrolling: touch;
+    }
+    .menu-active .menu-wrapper {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        background: rgba(0, 0, 0, 0.7);
+    }
+    .menu-mobile {
+        width: 26px;
+        height: 16px;
+        float: left;
+        position: relative;
+        text-indent: -9999px;
+        overflow: hidden;
+        cursor: pointer;
+        background: #F9F9F9;
+        margin-top: 2px;
+    }
+    .menu-mobile:before {
+        content: "";
+        display: block;
+        margin: 2px auto 0;
+        width: 100%;
+        height: 0.15em;
+        background: #333;
+        box-shadow: 0 0.45em 0 0 #333, 0 0.9em 0 0 #333;
+    }
+    .menu-active .menu-mobile {
+        background: #4c4c4c;
+        position: relative;
+        left: 0;
+        float: right;
+        z-index: 58;
+    }
+    .menu-active .responsive-menu-mobile:before {}
+    .menu-active .menu-mobile:before {
+        background: #fff;
+        box-shadow: 0 0.45em 0 0 #fff, 0 0.9em 0 0 #fff;
+    }
+    menu {
+        position: fixed;
+        top: 0;
+        left: -85%;
+        z-index: 450;
+        width: 85%;
+        height: 100%;
+        padding-top: 0;
+        padding-left: 0;
+        margin: 0;
+        background: #fff;
+        overflow: scroll;
+    }
+    menu li a {
+        display: block;
+        margin: 0 10px;
+        padding: 10px 30px;
+        color: #333;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Ubuntu-Regular';
+    }
+    menu li a:hover {
+        background: #FFF;
+        color: #d55401;
+    }
+    .categoria-nivel-2 {
+        display: none;
+        margin: 0;
+        padding: 0;
+        background: #F9F9F9;
+    }
+    .titulo-categoria-mobile {
+        padding: 10px;
+        font-family: 'Ubuntu-Bold';
+        color: #333;
+        font-size: 14px;
+        border-bottom: 1px solid #ccc;
+    }
+    .ver-tudo-categoria a {
+        padding: 10px;
+    }
+    .categoria-nivel-3 {
+        display: none;
+        padding: 0;
+        background: #F1F1F1;
+    }
+    .categoria-nivel-3.ocultar {
+        display: block;
+    }
+    .categoria-nivel-2 li span {
+        font-size: 14px;
+        color: #333;
+        padding: 10px 20px;
+        display: block;
+        font-family: 'Ubuntu-Regular';
+    }
+    .links-c4-mobile {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        border-top: 10px solid #F5F4F2;
+    }
+    .links-c4-mobile span {
+        font-size: 12px;
+        padding: 10px;
+        margin: 9px;
+    }
+    .links-c4-mobile span a:before {
+        content: "";
+        display: block;
+        margin: 0 auto 5px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .links-c4-mobile span a {
+        color: #333;
+        font-family: 'Ubuntu-Regular';
+    }
+    .ofertas-lojas a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/folheto-mobile.svg);
+        width: 20px;
+        height: 20px;
+    }
+    .encontrar-lojas a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/pin-mobile.svg);
+        width: 20px;
+        height: 20px;
+    }
+    .atendimento a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/atendimento-mobile.svg);
+        width: 20px;
+        height: 20px;
+    }
+    .cartao-carrefour a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cartao-mobile.svg);
+        width: 20px;
+        height: 20px;
+    }
+    .grupo-carrefour a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/grupo-carrefour-mobile.svg);
+        width: 40px;
+        height: 20px;
+    }
+    .links-c4-mobile .seja-parceiro a:before {
+        content: ' + ';
+        border: 1px solid;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        border-radius: 100%;
+        line-height: 14px;
+        width: 15px;
+        top: 1px;
+        text-align: center;
+        margin-bottom: 5px;
+        margin-top: 4px;
+        color: #1e5bc6;
+    }
+    /*Com a classe menu-active na tag HTML*/
+    .menu-active menu {
+        left: 0;
+    }
+    .categoria-nivel-2.ocultar {
+        display: block;
+    }
+    menu .no-food-login {
+        border: none;
+        width: 100%;
+        display: block;
+        height: 80px;
+        float: unset;
+        position: unset;
+        padding: 15px 0;
+        min-height: 151px;
+        background: #1E5BC6;
+        border-bottom: 10px solid #F5F4F2;
+    }
+    .categoria-nivel-2 li {
+        border-bottom: 1px solid #ccc;
+        padding: 0;
+    }
+    body.logged-in menu .no-food-login .name-header {
+        display: block !important;
+        float: left;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        font-family: 'Ubuntu-bold';
+        height: auto;
+        width: 75%;
+    }
+    body.logged-in menu .no-food-login .name-header:before {
+        content: "Olá,";
+        font-size: 11px;
+        font-family: 'Ubuntu-Regular';
+        display: block;
+        text-decoration: none;
+    }
+    menu .no-food-login ul.is-logged.no-food-login__dropdow.hide {
+        float: unset;
+        display: flex !important;
+        top: 60px;
+        position: unset;
+        visibility: unset !important;
+        width: 100%;
+        height: 80px;
+        margin-top: 46px;
+        padding: 10px 0;
+    }
+    menu .no-food-login ul.is-logged.no-food-login__dropdow.hide li a {
+        border: none;
+        color: #333333;
+        margin: 0;
+        padding: 11px 7px;
+    }
+    menu .no-food-login ul.is-logged.no-food-login__dropdow.hide li a:before {
+        content: "";
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        margin: 0 auto 5px;
+        width: 20px;
+        height: 20px;
+    }
+    menu .no-food-login ul.is-logged.no-food-login__dropdow.hide li:first-child a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/user-icon-blue.svg);
+    }
+    menu .no-food-login ul.is-logged.no-food-login__dropdow.hide li:nth-child(2) a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/ofertas-loja-mobile.svg);
+    }
+    menu .no-food-login ul.is-logged.no-food-login__dropdow.hide li:nth-child(3) a:before {
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/list-icon.svg);
+    }
+    .not-logged-in menu .no-food-login {
+        min-height: 60px;
+        border: 0;
+    }
+    .not-logged-in menu .no-food-login ul.is-logged.no-food-login__dropdow.hide {
+        display: none !important;
+        margin: 0;
+        padding: 0;
+        height: 60px;
+    }
+    menu .no-food-login a.logout.no-food-login__link:nth-child(5) {
+        display: none;
+    }
+    menu .no-food-login a.logout.no-food-login__link {
+        display: none;
+    }
+    menu a.logout.no-food-login__link.mobile-new {
+        width: 65px;
+        float: right;
+        color: #fff;
+        text-align: center;
+        margin-right: 0;
+        margin-top: -15px;
+        border: 1px solid;
+        padding: 6px;
+        border-radius: 5px;
+        display: block;
+    }
+    .todos-departamentos-mobile {
+        padding: 10px;
+        font-family: 'Ubuntu-Bold';
+        font-size: 14px;
+        border-bottom: 1px solid #ccc;
+    }
+    .todos-departamentos-mobile span {
+        font-size: 14px;
+        color: #1E5BC6;
+    }
+    .todos-departamentos-mobile span:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: -1px 10px 0 0;
+        float: left;
+        background-image: url('https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/depet-icon.svg');
+    }
+    .mercado-mobile {
+        padding: 10px;
+        font-family: 'Ubuntu-Bold';
+        font-size: 14px;
+        border-bottom: 1px solid #ccc;
+    }
+    .mercado-mobile span:before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: -1px 10px 0 0;
+        float: left;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/mercado-icon.svg);
+    }
+    .acessar-mercado {
+        float: right;
+        font-family: 'Ubuntu-Regular';
+        font-weight: 500;
+        text-decoration: underline;
+        color: #1E5BC6;
+    }
+    .mercado {
+        overflow-y: hidden;
+        display: block;
+    }
+    .mercado-mobile span {
+        color: #E81E26;
+    }
+    .mercado .categoria:last-child {
+        border-bottom: 30px solid #f5f4f2;
+    }
+    .ver-mais-mercado {
+        padding: 20px;
+        border-bottom: 1px solid #ccc;
+    }
+    .btn-ver-mais-mercado {
+        text-align: center;
+        display: block;
+        padding: 5px 50px;
+        background: #fff;
+        color: #1E5BC6;
+        border: 1px solid #1E5BC6;
+        border-radius: 5px;
+        font-family: 'Ubuntu-Regular';
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.20);
+    }
+    .row.header-no-food {
+        background: #fff;
+        height: 131px;
+        padding: 20px 20px 0px;
+        margin-bottom: 0;
+    }
+    .no-food-menu,
+    .no-food-stores,
+    .no-food-attendance {
+        display: none;
+    }
+    .no-food-cart {
+        border: 0;
+        padding: 0;
+        float: right;
+        width: 26px;
+        height: 26px;
+        min-height: 26px;
+    }
+    .no-food-cart__count {
+        background: #40AA60;
+        left: 18px;
+    }
+    .header-no-food .no-food-logo {
+        padding: 0 !important;
+        border: 0;
+        min-height: 24px;
+        width: 125px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        max-height: 24px;
+        transform: translateX(-40%);
+        margin-left: 36%;
+    }
+    .header-no-food .no-food-logo .simple-banner-component.simple-banner a:before {
+        content: "";
+        width: 125px;
+        height: 24px;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/logo-mobile.svg);
+        display: block;
+    }
+    .miniCart {
+        margin: 0;
+    }
+    .no-food-cart .crficon-cart:before {
+        content: "";
+        width: 26px;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/cart-mobile.svg);
+        height: 26px;
+        display: block;
+    }
+    .no-food-logo img {
+        width: 0;
+    }
+    .no-food-search {
+        width: 87.4%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        background: #fff;
+        border-radius: 5px;
+        border: 1px solid #666666;
+        height: 44px;
+        z-index: 0;
+        top: 67px;
+    }
+    div#block-search-mobile-add {
+        height: 40px;
+        background: #fff;
+        border-radius: 5px;
+    }
+    .no-food-search__input {
+        padding: 5px 20px;
+        min-height: 40px;
+        margin: 0;
+        background: #fff;
+        border-radius: 5px;
+        margin-bottom: 0 !important;
+    }
+    .no-food-search .site-search button {
+        background: #fff;
+    }
+    .crficon-search:before {
+        content: "";
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/search-icon.svg);
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+    menu .no-food-login span.no-food-login__enter.hidden-xs.hidden-sm {
+        display: block !important;
+        text-align: left;
+        color: #fff;
+        text-transform: none;
+        font-family: 'Ubuntu-bold';
+    }
+    menu .no-food-login svg.svg-header.svg-header__color-blue.no-food-login__icon {
+        display: none;
+    }
+    menu .no-food-login:before {
+        content: "";
+        display: block;
+        width: 26px;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/login-icon.svg);
+        height: 28px;
+        float: left;
+        border: none;
+        position: unset;
+        filter: brightness(1150%);
+        margin-right: 10px;
+        margin-left: 12px;
+    }
+    menu .no-food-login span.no-food-login__enter.hidden-xs.hidden-sm:before {
+        content: "Acompanhe seus pedidos";
+        font-size: 11px;
+        font-family: 'Ubuntu-Regular';
+        display: block;
+        text-decoration: none;
+    }
+    .ver-tudo-categoria a {
+        padding: 10px;
+    }
+    .titulo-categoria-mobile:after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        display: block;
+        float: right;
+        margin: 7px 10px 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/arrow-down.svg);
+    }
+    .categoria-nivel-2 li:after {
+        content: "";
+        display: none
+    }
+    li.titulo-categoria-mobile span:after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        display: block;
+        float: right;
+        margin: 7px 0 0 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/arrow-down.svg);
+    }
+    .ofertas-sinal-verde-menu-mobile a {
+        font-weight: 600px;
+    }
+
+    /*BANNERS MENU MOBILE*/
+
+    .navigations ul.nivel-1 li.banner--menu--img {
+        width: auto;
+    }
+
+    .categoria-nivel-2 li.banner--menu--img {
+        width: 100%;
+        height: auto;
+    }
+
+    .categoria-nivel-2 li.banner--menu--img img {
+        width: 100%;
+        height: 50px;
+    }
+
+    .categoria-nivel-2 li.banner--menu--img a {
+        margin: unset;
+        padding: unset;
+    }
+
+    .categoria-nivel-2 li.banner--menu--img.bnm--matinais,
+    .categoria-nivel-2 li.banner--menu--img.bnm--alimentos,
+    .categoria-nivel-2 li.banner--menu--img.bnm--refrigerados,
+    .categoria-nivel-2 li.banner--menu--img.bnm--bebidas,
+    .categoria-nivel-2 li.banner--menu--img.bnm--saudaveis {
+        display:none;
+    }
+}
+
+@media (max-width:425px) {
+    .header-no-food .no-food-logo {
+        transform: translateX(-29%);
+    }
+}
+
+@media (max-width:375px) {
+    .links-c4-mobile span {
+        margin: 10px 0;
+        padding: 4px 3px;
+    }
+    .menu-active .menu-mobile {
+        left: 0;
+    }
+    .header-no-food .no-food-logo {
+        transform: translateX(-33%);
+    }
+}
+
+@media (max-width:320px) {
+    .header-no-food .no-food-logo {
+        transform: translateX(-40%);
+    }
+}
+
+
+/*MARGEM NA PAGINA DE PRODUTO E CATEGORIA*/
+
+.block-product-details,
+.template-pages-category-productGridPage .container-fluid {
+    margin-top: 30px;
+}
+
+
+/*MENU CATEGORIA MOBILE*/
+
+.mobile-bar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .page-homepage .mobile-bar {
+        display: block;
+    }
+    .mobile-bar {
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+        padding: 10px 5px;
+        display: block;
+    }
+    .mobile-bar ul {
+        padding: 10px 15px;
+        display: -webkit-inline-box;
+        margin: 0;
+        overflow: hidden;
+        overflow-x: scroll;
+        width: 100%;
+    }
+    .mobile-bar ul li {
+        margin-right: 30px;
+    }
+    .mobile-bar ul li a {
+        color: #333;
+        text-decoration: none;
+    }
+    .mobile-links.mercado-menu-mobile a {
+        color: #e81e26;
+    }
+    .mercado-menu-mobile a:before {
+        content: "";
+        background-image: url('https://static.carrefour.com.br/imagens/site/2019/conteudo/header-site/icons/svg/mercado-icon.svg');
+        width: 16px;
+        height: 16px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0px 10px 0 0;
+        float: left;
+    }
+    .mobile-links.dia-dos-namorados-menu-mobile a {
+        color: #20000f;
+        font-weight: bold;
+
+    }
+    .mobile-links.aqui-tem-tudo-menu-mobile a {
+        color: #20000f;
+
+    }
+
+}

@@ -1,0 +1,448 @@
+/* Empty File */
+.yCmsContentSlot #heading h2.heading {
+	border: none;
+	height: auto;
+}
+.yCmsContentSlot #sub-heading {
+	text-align: center;
+	padding-bottom: 40px;
+	float: left;
+    width: 100%;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yCmsContentSlot #sub-heading strong {
+	clear: left;
+	display: block;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 19px;
+	color: #4d4d4d;
+}
+.yCmsContentSlot .sus-component .product {
+	background-color: #fafafa;
+	border-top: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+	font-weight: bold;
+    color: #4d4d4d;
+    padding-bottom: 10px;
+}
+.yCmsContentSlot .block-component .sus-component .heading span {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #1e56c9;
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 33px;
+}
+.yCmsContentSlot .sus-component .product div {
+	background-color: #fafafa;
+}
+.yCmsContentSlot .sus-component .product div .thumb {
+	float: left;
+    width: 100%;
+    margin-top: 20px;
+    height: 86px;
+}
+.yCmsContentSlot .sus-component .product div .thumb a {
+	float: left;
+	width: 100%;
+}
+.yCmsContentSlot .sus-component .product div .thumb a img {
+	float: left;
+}
+.yCmsContentSlot .sus-component .product div .thumb a p {
+	float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yCmsContentSlot .sus-component .product div + div {
+	padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    height: 80px;
+    display: table;
+}
+.yCmsContentSlot .sus-component .product div + div span {
+	display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.yCmsContentSlot .sus-component .warranty {
+	background-color: #fafafa;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+	padding-bottom: 14px;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label {
+	text-align: center;
+    margin-top: 20px;
+    height: 86px;
+    //padding-top: 30px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #272727;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline input[type="radio"] {
+    display:none;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline label {
+	cursor: pointer;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline label p {
+	display:inline-block;
+    width:19px;
+    height:19px;
+    margin:0px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    background-color: #FFF;
+    border: 1px solid #8c8c8c;
+    float: left;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline label div {
+	    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      color: #000000;
+      font-size: 17px;
+      text-indent: 0px;
+      padding-left: 10px;
+      float: left;
+      line-height: normal;
+      text-align: left;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline label div em {
+        width: 100%;
+        max-height: 39px;
+        float: left;
+        text-overflow: clip;
+        overflow: hidden;
+        font-style: normal;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline label div span {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1e56c9;
+    font-size: 24px;
+    line-height: 33px;
+    text-indent: 0px;
+    display: inline-block;
+}
+.yCmsContentSlot .sus-component .warranty .warranty-label .radio-inline input[type="radio"]:checked + label p {
+	background-color: #1856c5;
+}
+
+.yCmsContentSlot .sus-component .warranty div {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1e56c9;
+    font-size: 19px;
+    line-height: 33px;
+    text-indent: 5px;
+    display: inline-block;
+}
+.yCmsContentSlot .sus-component .warranty div + div {
+	text-align: center;
+    padding-bottom: 23px;
+    padding-top: 22px;
+    background-color: #FFF;
+    border-top: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    border-left: 1px solid #f2f2f2;
+}
+.yCmsContentSlot .sus-component .warranty div + div span {
+	font-size: 22px;
+	color: #1e56c9;
+}
+.yCmsContentSlot .sus-component .warranty div + div + div + div + div + div {
+	border-bottom: 1px solid #f2f2f2;
+}
+.yCmsContentSlot .sus-component .warranty + .warranty {
+	background-color: #fafafa;
+	border-top: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+}
+
+.yCmsContentSlot .sus-component .warranty + .warranty + .warranty {
+	background-color: #fafafa;
+	border-top: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+}
+
+.yCmsContentSlot .sus-component .service,
+.yCmsContentSlot .sus-component .installation,
+.yCmsContentSlot .sus-component .insurance {
+	background-color: #fafafa;
+	border-top: 1px solid #f2f2f2;
+	border-left: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	text-align: center;
+	font-weight: bold;
+    color: #4d4d4d;
+    margin-bottom: 10px;
+}
+.yCmsContentSlot .sus-component .service div,
+.yCmsContentSlot .sus-component .installation div,
+.yCmsContentSlot .sus-component .insurance div {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    text-align: left;
+    height: 65px;
+    display: table;
+    margin: 0px auto;
+}
+.yCmsContentSlot .sus-component .service div span,
+.yCmsContentSlot .sus-component .installation div span,
+.yCmsContentSlot .sus-component .insurance div span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    text-indent: 35px;
+    color: #4d4d4d;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yCmsContentSlot .sus-component .service div + div,
+.yCmsContentSlot .sus-component .installation div + div,
+.yCmsContentSlot .sus-component .insurance div + div {
+	background-color: #FFF;
+}
+.yCmsContentSlot .sus-component .service div + div span,
+.yCmsContentSlot .sus-component .installation div + div span,
+.yCmsContentSlot .sus-component .insurance div + div span {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.yCmsContentSlot .sus-component .service div + div + div span,
+.yCmsContentSlot .sus-component .installation div + div + div span,
+.yCmsContentSlot .sus-component .insurance div + div + div span {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yCmsContentSlot .sus-component .service div + div + div span strong,
+.yCmsContentSlot .sus-component .installation div + div + div span strong,
+.yCmsContentSlot .sus-component .insurance div + div + div span strong {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1e56c9;
+    font-size: 19px;
+    line-height: 33px;
+    text-indent: 0px;
+    display: inline-block;
+}
+.yCmsContentSlot .sus-component .service div + div + div + div,
+.yCmsContentSlot .sus-component .installation div + div + div + div,
+.yCmsContentSlot .sus-component .insurance div + div + div + div {
+	background-color: #fafafa;
+}
+.yCmsContentSlot .sus-component .service .service-label,
+.yCmsContentSlot .sus-component .installation .installation-label {
+	text-align: center;
+    padding-top: 11px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #272727;
+    font-size: 13px;
+    line-height: 19px;
+    padding: 0px;
+}
+.yCmsContentSlot .sus-component .service .service-label label,
+.yCmsContentSlot .sus-component .installation .installation-label label {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #272727;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yCmsContentSlot .sus-component .service .service-label .radio-inline input[type="radio"],
+.yCmsContentSlot .sus-component .installation .installation-label .radio-inline input[type="radio"] {
+    display:none;
+}
+.yCmsContentSlot .sus-component .service .service-label .radio-inline label,
+.yCmsContentSlot .sus-component .installation .installation-label .radio-inline label {
+	cursor: pointer;
+    position: absolute;
+    margin: 0px;
+    top: 50%;
+    margin-top: -10px;
+}
+.yCmsContentSlot .sus-component .service .service-label .radio-inline label p,
+.yCmsContentSlot .sus-component .installation .installation-label .radio-inline label p{
+	display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    -moz-border-radius:  50%;
+    border-radius:  50%;
+    background-color: #FFF;
+    border: 1px solid #8c8c8c;
+}
+.yCmsContentSlot .sus-component .service .service-label .radio-inline input[type="radio"]:checked + label p,
+.yCmsContentSlot .sus-component .installation .installation-label .radio-inline input[type="radio"]:checked + label p {
+	background-color: #1856c5;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label {
+	text-align: center;
+    height: auto;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #272727;
+    font-size: 13px;
+    line-height: 19px;
+    background-color: #FFF;
+}
+
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline input[type="radio"] {
+    display:none;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline label {
+	cursor: pointer;
+	margin: 0px;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline label p {
+	display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -9px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #FFF;
+    border: 1px solid #8c8c8c;
+    float: left;
+    position: absolute;
+    top: 50%;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline label div {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #000000;
+    font-size: 15px;
+    text-indent: 0px;
+    padding-left: 0;
+    height: auto;
+    margin: 7px 0px 0px 25px;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline label div span {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: #000000;
+    font-size: 15px;
+    line-height: 33px;
+    text-indent: 5px;
+    display: inline-block;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline label div span strong {
+	color: #1e56c9;
+}
+.yCmsContentSlot .sus-component .insurance .insurance-label .radio-inline input[type="radio"]:checked + label p {
+	background-color: #1856c5;
+}
+
+.yCmsContentSlot .result {
+	background-color: #fafafa;
+	margin-top: 70px;
+	padding-top: 15px;
+}
+.yCmsContentSlot .result ul {
+	padding: 0px 15px 0px 15px;
+}
+.yCmsContentSlot .result ul li {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 19px;
+}
+.yCmsContentSlot .result ul li.total {
+	margin-top: 15px;
+}
+.yCmsContentSlot .result ul li.total-price {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #1e56c9;
+    font-size: 19px;
+    line-height: 33px;
+    text-indent: 5px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.block-service-details .obs {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e6e7e8;
+}
+.block-service-details .info {
+	margin-top: 20px;
+}
+.block-service-details #addServices {
+    margin: 20px 0;
+    background-color: #ff1654;
+    border: none;
+    color: #ffffff;
+    height: 55px;
+    font-size: 1.231em;
+    text-transform: uppercase;
+    padding: 0px 100px;
+}
+.asm-service-radio-to-check {
+    border-radius: 0% !important;
+}
